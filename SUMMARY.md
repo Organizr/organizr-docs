@@ -4,7 +4,7 @@
 
 ## 📌Getting started
 
----
+## 🆘 Help
 
-* [Forgot my Organizr account password](forgot-password.md)
+* [Forgot my Organizr account password](help/forgot-password.md)
 
