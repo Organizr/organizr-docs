@@ -6,5 +6,5 @@
 
 ---
 
-* [Forgot my Organizr account password](untitled.md)
+* [Forgot my Organizr account password](forgot-password.md)
 
