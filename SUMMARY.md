@@ -1,12 +1,18 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Introduction](README.md)
 
 ## 📌Getting started
 
 ---
 
 * [Ubuntu/Debian](ubuntu-debian.md)
+
+## Installation
+
+* [Installing Webservers](installation/installing-webservers/README.md)
+  * [Nginx](installation/installing-webservers/nginx.md)
+  * [Apache](installation/installing-webservers/apache.md)
 
 ## 🆘 Help
 
