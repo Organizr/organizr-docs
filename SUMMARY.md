@@ -6,7 +6,7 @@
 
 ---
 
-* [Ubuntu/Debian](ubuntu-debian.md)
+* [Ubuntu & Debian](ubuntu-debian.md)
 
 ## Installation
 
@@ -16,5 +16,5 @@
 
 ## 🆘 Help
 
-* [Forgot my Organizr account password](help/forgot-password.md)
+* [Forgot my password](help/forgot-password.md)
 

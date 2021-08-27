@@ -1,4 +1,4 @@
-# Forgot my Organizr account password
+# Forgot my password
 
 ## Introduction
 
