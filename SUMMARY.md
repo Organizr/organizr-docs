@@ -20,6 +20,7 @@
 ## Tweaks
 
 * [Tweaks](tweaks/tweaks.md)
+* [Hide custom text from specific groups](tweaks/hide-custom-text-from-specific-groups.md)
 
 ## 🆘 Help
 
