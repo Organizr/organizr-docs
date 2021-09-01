@@ -24,6 +24,7 @@
 ## 🆘 Help
 
 * [FAQ](help/faq.md)
-* [Update available even though up to date](help/update-available-even-though-up-to-date.md)
 * [Forgot my password](help/forgot-password.md)
+* [Update available even though up to date](help/update-available-even-though-up-to-date.md)
+* [Auth cookie is not used by other subdomains](help/auth-cookie-is-not-used-by-other-subdomains.md)
 
