@@ -28,4 +28,5 @@
 * [Update available even though up to date](help/update-available-even-though-up-to-date.md)
 * [Auth cookie is not used by other subdomains](help/auth-cookie-is-not-used-by-other-subdomains.md)
 * [Login Looping - SameSite Errors](help/login-looping-samesite-errors.md)
+* [Organizr Login Error](help/organizr-login-error.md)
 
