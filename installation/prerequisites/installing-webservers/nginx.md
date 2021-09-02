@@ -88,3 +88,11 @@ http {
 }
 ```
 
+## Ubuntu & Debian
+
+### Download and Install
+
+Run `apt-get install nginx` or [consult this guide](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04) for detailed setup.
+
+
+

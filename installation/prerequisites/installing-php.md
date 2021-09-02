@@ -44,7 +44,27 @@ The second component needed for Organizr to run is PHP.
        1. So that is becomes: `sqlite3.extension_dir = ext`
 11. On the opened `cmd`prompt type in `nssm restart php` to restart the PHP service to apply the changes in `php.ini`.
 
+## Ubuntu & Debian
 
+### Download and Install
 
+#### Add the repository
 
+```text
+apt-get install software-properties-common
+add-apt-repository ppa:ondrej/php
+apt-get update
+```
+
+#### Install
+
+```text
+apt-get install php7.1-fpm
+```
+
+Then, to be sure all of the PHP packages are installed, run the following command with your package manager. Some of these may also require other dependencies, so select "Yes" to install those as well.
+
+```text
+apt-get install php7.1-mysql php7.1-sqlite3 sqlite3 php7.1-xml php7.1-zip openssl php7.1-curl
+```
 
