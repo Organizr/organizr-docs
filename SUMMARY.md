@@ -12,6 +12,7 @@
   * [Nginx](installation/installing-webservers/nginx.md)
   * [Apache](installation/installing-webservers/apache.md)
   * [Caddy](installation/installing-webservers/caddy.md)
+* [First Time Setup](installation/first-time-setup.md)
 
 ## Features
 
