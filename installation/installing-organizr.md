@@ -10,7 +10,66 @@ blah
 
 ## Windows
 
+### Pre-Check
 
+{% hint style="info" %}
+Make sure you have setup Nginx and PHP
+{% endhint %}
+
+{% page-ref page="prerequisites/installing-webservers/nginx.md" %}
+
+{% page-ref page="prerequisites/installing-php.md" %}
+
+{% hint style="warning" %}
+Make sure you have enabled php\_pdo\_sqlite.dll & php\_openssl.dll PHP extensions.
+{% endhint %}
+
+### Download Organizr
+
+1. [Download](https://github.com/causefx/Organizr/) the latest release of Organizr.
+2. Open the downloaded organizr zip file and copy all files and paste them in the web root folder `c:\nginx\html\`
+   1. OR If you prefer you can create sub-directory called organizr under `c:\nginx\html` and paste the copied organizr files in that folder.
+3. Go to `http(s)://localhost/index.php`
+
+{% hint style="info" %}
+You may use this Nginx config file if you would like
+{% endhint %}
+
+```text
+#user  nobody;
+worker_processes  1;
+
+events {
+    worker_connections  1024;
+}
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+    sendfile        on;
+    keepalive_timeout  65;
+
+    server {
+        listen       80;
+        #CHANGE THESE LINES##########
+        server_name  localhost;
+        root   html/Organizr;
+        #############################
+        index  index.php index.html index.htm;
+        error_page 400 401 403 404 405 408 500 502 503 504  /?error=$status;
+        location / { }
+        location ~ \.php$ {
+            fastcgi_pass   127.0.0.1:9000;
+            fastcgi_index  index.php;
+            fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
+            include        fastcgi_params;
+        }
+        location /api/v2 {
+	        try_files $uri /api/v2/index.php$is_args$args;
+        }
+    }
+}
+```
 
 ## Ubuntu & Debian
 
@@ -75,7 +134,9 @@ server{
 }
 ```
 
+{% hint style="warning" %}
 You may need to change the path to the socket depending on what version of PHP you installed
+{% endhint %}
 
     3. Navigate to that path locally using your web browser and the host's local ip address. `http://localhost` or `http://192.168.1.###` You should be able to login and establish your admin account.
 
