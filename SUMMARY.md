@@ -13,9 +13,11 @@
   * [Nginx](installation/installing-webservers/nginx.md)
   * [Apache](installation/installing-webservers/apache.md)
   * [Caddy](installation/installing-webservers/caddy.md)
+* [Installing PHP](installation/installing-php.md)
+* [Installing Organizr](installation/installing-organizr.md)
 * [First Time Setup](installation/first-time-setup.md)
 
-## Features
+## 🤖 Features
 
 * [Homepage](features/homepage/README.md)
   * [Plex Homepage Item](features/homepage/plex-homepage-item.md)
