@@ -23,6 +23,8 @@
 
 ## 🤖 Features
 
+* [SSO](features/sso/README.md)
+  * [Plex SSO](features/sso/plex-sso.md)
 * [Homepage](features/homepage/README.md)
   * [Plex Homepage Item](features/homepage/plex-homepage-item.md)
   * [HealthChecks Homepage Item](features/homepage/healthchecks-homepage-item.md)

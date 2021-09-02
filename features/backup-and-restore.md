@@ -14,7 +14,7 @@ Settings / System Settings / Backup
 
 All that you need to do is click the `Create Backup Button`
 
-![](../.gitbook/assets/image%20%2831%29.png)
+![](../.gitbook/assets/image%20%2833%29.png)
 
 Once the backup process completes, the new back up will be listed at the bottom of the back up listing.  There are 2 buttons that are accessible for each backup.
 
