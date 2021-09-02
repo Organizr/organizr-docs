@@ -10,6 +10,8 @@ Are you running Docker Containers?
 
 If you are running Docker Containers, you can skip to Installing Organizr via Docker.
 
+{% page-ref page="../installing-organizr.md" %}
+
 ## Webserver
 
 Do you have a Web Server installed?
