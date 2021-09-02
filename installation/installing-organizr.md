@@ -6,7 +6,42 @@ blah
 
 ## Docker
 
+### Installing via CLI
 
+```text
+docker create \
+  --name=organizr \
+  -v <path to data>:/config \
+  -e PGID=<gid> -e PUID=<uid>  \
+  -p 80:80 \
+  -e fpm="false" \ # optional
+  -e branch="v2-master" \ # optional
+  organizr/organizr
+```
+
+### Installing via Compose File
+
+```text
+version: "3.6"
+services:
+    organizr:
+        container_name: organizr
+        hostname: organizr
+        image: organizr/organizr:latest
+        restart: unless-stopped
+        ports:
+            - 80:80
+        volumes:
+            - <path to data>:/config
+        environment:
+            - PUID=<uid>
+            - PGID=<gid>
+            - TZ=<timezone>
+```
+
+### More Information
+
+ Head over to [https://github.com/Organizr/docker-organizr](https://github.com/Organizr/docker-organizr) to see more information.
 
 ## Windows
 
