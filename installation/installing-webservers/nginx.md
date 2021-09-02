@@ -48,3 +48,43 @@ location ~ \.php$ {
 To verify, open a browser and type localhost and press enter. If you get "Welcome to nginx!” message then Nginx has been installed successfully
 {% endhint %}
 
+### Sample Config File
+
+You can copy the following if you wish and replace the content in your `nginx.conf` file
+
+```text
+#user  nobody;
+worker_processes  1;
+
+events {
+    worker_connections  1024;
+}
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+    sendfile        on;
+    keepalive_timeout  65;
+
+    server {
+        listen       80;
+        #CHANGE THESE LINES##########
+        server_name  localhost;
+        root   html/Organizr;
+        #############################
+        index  index.php index.html index.htm;
+        error_page 400 401 403 404 405 408 500 502 503 504  /?error=$status;
+        location / { }
+        location ~ \.php$ {
+            fastcgi_pass   127.0.0.1:9000;
+            fastcgi_index  index.php;
+            fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
+            include        fastcgi_params;
+        }
+        location /api/v2 {
+	        try_files $uri /api/v2/index.php$is_args$args;
+        }
+    }
+}
+```
+
