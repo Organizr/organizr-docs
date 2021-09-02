@@ -21,7 +21,7 @@ The HealthChecks Homepage item allows you to see all your health checks on your 
 | Enable | Enable the Plex Module |
 | Main Module Minimum Authentication | Minimum Group needed to see Entire Module |
 
-![](../../.gitbook/assets/image%20%2828%29.png)
+![](../../.gitbook/assets/image%20%2829%29.png)
 
 ### Connection
 
@@ -33,7 +33,7 @@ If you already went through the [Plex SSO](https://docs.organizr.app/books/setup
 | Disable Certificate Check | Disables the Certificate of the URL provided if https |
 | Use Custom Certificate | Uses a Custom Certificate for the verification of the URL provided if https |
 
-![](../../.gitbook/assets/image%20%2825%29.png)
+![](../../.gitbook/assets/image%20%2826%29.png)
 
 ### Misc Options
 
@@ -45,4 +45,26 @@ If you already went through the [Plex SSO](https://docs.organizr.app/books/setup
 | Show Tags | Show tags on the healthchecks item |
 
 ![](../../.gitbook/assets/image%20%2818%29.png)
+
+## Signing up at HealthChecks.io
+
+Head over to [https://healthchecks.io](https://healthchecks.io/) and create an account.  Once created head over to User Menu and select Project Settings to copy your API Key.
+
+![](../../.gitbook/assets/image%20%2823%29.png)
+
+
+
+Enable the API and once enabled click on Show API Keys
+
+![](https://docs.organizr.app/uploads/images/gallery/2019-03-Mar/scaled-840-0/CsXNlS3yKOMAcxuZ-image-1553625446064.png)
+
+Copy the API key \(Top one\) and paste into Organizr
+
+![](https://docs.organizr.app/uploads/images/gallery/2019-03-Mar/scaled-840-0/oVgcX3QCeKQeiO9m-image-1553625472254.png)
+
+### **Tips**
+
+You can setup logo/images for the checks if you add an images URL to the tags section for that check
+
+![](https://docs.organizr.app/uploads/images/gallery/2019-03-Mar/scaled-840-0/ZjVWM59vUpTvZ0pH-image-1553625592917.png)
 

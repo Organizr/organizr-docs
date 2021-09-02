@@ -6,7 +6,7 @@ The homepage houses all of your media items formatted in a very nice UI for you 
 
 ### Homepage Output
 
-![](../../.gitbook/assets/image%20%2827%29.png)
+![](../../.gitbook/assets/image%20%2828%29.png)
 
 ### Setting up the Homepage Tab
 
@@ -28,7 +28,7 @@ The URL will never change as that points to the Organizr API.  You may change th
 Settings / Tab Editor / Homepage Items
 {% endhint %}
 
-![](../../.gitbook/assets/image%20%2824%29.png)
+![](../../.gitbook/assets/image%20%2825%29.png)
 
 To setup a Homepage item, all you need to do is click on any of the homepage items to edit those settings.  You may head to each Homepage item information page next.
 
