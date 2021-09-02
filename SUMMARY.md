@@ -21,6 +21,7 @@
 
 * [Tweaks](tweaks/tweaks.md)
 * [Hide custom text from specific groups](tweaks/hide-custom-text-from-specific-groups.md)
+* [Optimizing PHP-FPM](tweaks/optimizing-php-fpm.md)
 
 ## 🆘 Help
 
