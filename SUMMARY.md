@@ -15,7 +15,8 @@
 
 ## Features
 
-* [Homepage](features/homepage.md)
+* [Homepage](features/homepage/README.md)
+  * [Plex Homepage Item](features/homepage/plex-homepage-item.md)
 
 ## 🧪 Tweaks
 

@@ -72,7 +72,7 @@ Access this page from your browser [`edge://flags/`](edge://flags/)
 
 Search for SameSite and disable it.
 
-![Edge settings](../.gitbook/assets/image%20%286%29.png)
+![Edge settings](../.gitbook/assets/image%20%2814%29.png)
 
 ## **FireFox**
 
@@ -80,7 +80,7 @@ Access this page from your browser [`about:config`](edge://flags/)
 
 Search for SameSite and disable it.
 
-![Firefox settings](../.gitbook/assets/image%20%283%29.png)
+![Firefox settings](../.gitbook/assets/image%20%284%29.png)
 
 ### **Application Errors**
 
