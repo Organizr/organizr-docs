@@ -2,20 +2,21 @@
 
 * [Introduction](README.md)
 
-## 📌Getting started
-
 ## 💾 Installation
 
-* [Installing Webservers](installation/installing-webservers/README.md)
-  * [Organizr & Dependency Installer](installation/installing-webservers/organizr-and-dependency-installer/README.md)
-    * [Windows](installation/installing-webservers/organizr-and-dependency-installer/windows.md)
-    * [Ubuntu & Debian](installation/installing-webservers/organizr-and-dependency-installer/ubuntu-debian.md)
-  * [Nginx](installation/installing-webservers/nginx.md)
-  * [Apache](installation/installing-webservers/apache.md)
-  * [Caddy](installation/installing-webservers/caddy.md)
-* [Installing PHP](installation/installing-php.md)
+* [Prerequisites](installation/prerequisites/README.md)
+  * [Installing Webservers](installation/prerequisites/installing-webservers/README.md)
+    * [Organizr & Dependency Installer](installation/prerequisites/installing-webservers/organizr-and-dependency-installer/README.md)
+      * [Windows](installation/prerequisites/installing-webservers/organizr-and-dependency-installer/windows.md)
+      * [Ubuntu & Debian](installation/prerequisites/installing-webservers/organizr-and-dependency-installer/ubuntu-debian.md)
+    * [Nginx](installation/prerequisites/installing-webservers/nginx.md)
+    * [Apache](installation/prerequisites/installing-webservers/apache.md)
+    * [Caddy](installation/prerequisites/installing-webservers/caddy.md)
+  * [Installing PHP](installation/prerequisites/installing-php.md)
 * [Installing Organizr](installation/installing-organizr.md)
 * [First Time Setup](installation/first-time-setup.md)
+
+## 📌Getting started
 
 ## 🤖 Features
 
