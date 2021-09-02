@@ -65,7 +65,7 @@ With this module, you will be able to show the current streams that are active o
 {% endtab %}
 
 {% tab title="Preview" %}
-![](../../.gitbook/assets/image%20%2825%29.png)
+![](../../.gitbook/assets/image%20%2829%29.png)
 {% endtab %}
 {% endtabs %}
 
@@ -108,7 +108,7 @@ With this module, you will be able to show a search button on your Organizr so u
 {% endtab %}
 
 {% tab title="Preview" %}
-![](../../.gitbook/assets/image%20%2821%29.png)
+![](../../.gitbook/assets/image%20%2823%29.png)
 {% endtab %}
 {% endtabs %}
 
@@ -127,7 +127,7 @@ With this module, you will be able to show your curated playlists from your Plex
 {% endtab %}
 
 {% tab title="Preview" %}
-![](../../.gitbook/assets/image%20%2820%29.png)
+![](../../.gitbook/assets/image%20%2822%29.png)
 {% endtab %}
 {% endtabs %}
 

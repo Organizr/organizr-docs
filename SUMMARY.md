@@ -17,6 +17,7 @@
 
 * [Homepage](features/homepage/README.md)
   * [Plex Homepage Item](features/homepage/plex-homepage-item.md)
+  * [HealthChecks Homepage Item](features/homepage/healthchecks-homepage-item.md)
 
 ## 🧪 Tweaks
 
