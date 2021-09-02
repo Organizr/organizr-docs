@@ -175,3 +175,80 @@ You may need to change the path to the socket depending on what version of PHP y
 
     3. Navigate to that path locally using your web browser and the host's local ip address. `http://localhost` or `http://192.168.1.###` You should be able to login and establish your admin account.
 
+## Helm
+
+ Our helm chart is maintained by the guys over at [k8s@home.](https://github.com/k8s-at-home/charts/) This uses the official docker container.
+
+### **Links**
+
+| Repo | Link |
+| :--- | :--- |
+| Chart Github Repository | [k8s-at-home/charts/organizr](https://github.com/k8s-at-home/charts/tree/master/charts/organizr) |
+| Chart Helm Repository | [k8s-at-home](https://k8s-at-home.com/charts/) |
+| Artifacthub | [k8s-at-home/organizr](https://artifacthub.io/packages/helm/k8s-at-home/organizr) |
+
+### TL;DR
+
+```text
+helm repo add k8s-at-home https://k8s-at-home.com/charts
+helm install organizr k8s-at-home/organizr --values values.yaml # User supplied
+```
+
+### **Installing**
+
+1.  Add the helm repository for k8s-at-home
+2. Read through the values.yaml file either in the github repository or via helm commands
+3. Deploy a named release with your override values.yaml file
+
+### **Example Commands**
+
+```text
+helm repo add k8s-at-home https://k8s-at-home.com/charts
+# these next 2 lines are convenience lines to build a full values file for modification. 
+# You can construct your own overrides as you see fit.
+helm show values k8s-at-home/organizr | \
+    sed '1,2d;/service/,+1d' > values.yaml
+helm show values k8s-at-home/media-common | \
+    sed '1d;/image:/,+5d;s/port: ""/port: 80/;s/^/  /' >> values.yaml
+vi values.yaml # modify as needed
+helm install organizr k8s-at-home/organizr --values values.yaml
+```
+
+### Example values.yaml override
+
+```text
+organizr:
+  imagePullSecrets: []
+  fullnameOverride: organizr
+  
+  env:
+    TZ: UTC
+  
+  ingress:
+    enabled: true
+    annotations:
+      kubernetes.io/ingress.class: traefik
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      traefik.ingress.kubernetes.io/router.priority: "10"
+      cert-manager.io/cluster-issuer: letsencrypt-prod
+    hosts:
+      - host: organizr.domain.tld
+        paths:
+          - /
+    tls:
+      - secretName: organizr-domain-tld
+        hosts:
+          - organizr.domain.tld
+  
+  persistence:
+    # type: options are statefulset or deployment
+    type: statefulset
+    config:
+      enabled: true
+  
+  resources:
+    requests:
+      cpu: 100m
+      memory: 128Mi
+```
+
