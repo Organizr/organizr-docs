@@ -14,9 +14,12 @@
     * [Caddy](installation/prerequisites/installing-webservers/caddy.md)
   * [Installing PHP](installation/prerequisites/installing-php.md)
 * [Installing Organizr](installation/installing-organizr.md)
-* [First Time Setup](installation/first-time-setup.md)
 
 ## 📌Getting started
+
+---
+
+* [First Time Setup](first-time-setup.md)
 
 ## 🤖 Features
 
