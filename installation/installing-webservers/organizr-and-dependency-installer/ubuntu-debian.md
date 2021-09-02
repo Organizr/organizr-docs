@@ -1,3 +1,7 @@
+---
+description: Organizr & Dependency Installer for Ubuntu & Debian
+---
+
 # Ubuntu & Debian
 
 ## OUI \(Organizr Ubuntu Installer\) <a id="bkmrk-windows-here"></a>

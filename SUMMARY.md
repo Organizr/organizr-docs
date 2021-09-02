@@ -8,6 +8,7 @@
 
 * [Installing Webservers](installation/installing-webservers/README.md)
   * [Organizr & Dependency Installer](installation/installing-webservers/organizr-and-dependency-installer/README.md)
+    * [Windows](installation/installing-webservers/organizr-and-dependency-installer/windows.md)
     * [Ubuntu & Debian](installation/installing-webservers/organizr-and-dependency-installer/ubuntu-debian.md)
   * [Nginx](installation/installing-webservers/nginx.md)
   * [Apache](installation/installing-webservers/apache.md)
