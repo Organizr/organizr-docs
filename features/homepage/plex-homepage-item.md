@@ -4,6 +4,8 @@ description: Homepage Item Information
 
 # Plex Homepage Item
 
+![](../../.gitbook/assets/image%20%2816%29.png)
+
 ## Summary
 
 The Plex homepage item allows you to have the following Plex items displayed on the homepage:
@@ -57,7 +59,15 @@ With this module, you will be able to show the current streams that are active o
 | Refresh Seconds | How many seconds to refresh the Module |
 | Libraries to Exclude | Drop down of libraries to exclude from this Module |
 
+{% tabs %}
+{% tab title="Settings" %}
 ![](../../.gitbook/assets/image%20%2811%29.png)
+{% endtab %}
+
+{% tab title="Preview" %}
+![](../../.gitbook/assets/image%20%2820%29.png)
+{% endtab %}
+{% endtabs %}
 
 ### Recent Items
 
@@ -71,7 +81,15 @@ With this module, you will be able to display all recent items that were added t
 | Item Limit | Limit the total \# of items to display |
 | Refresh Seconds | How many seconds to refresh the Module |
 
+{% tabs %}
+{% tab title="Settings" %}
 ![](../../.gitbook/assets/image%20%288%29.png)
+{% endtab %}
+
+{% tab title="Preview" %}
+![](../../.gitbook/assets/image%20%2817%29.png)
+{% endtab %}
+{% endtabs %}
 
 ### Media Search
 
@@ -84,7 +102,15 @@ With this module, you will be able to show a search button on your Organizr so u
 | Libraries to Exclude | Drop down of libraries to exclude from this Module |
 | Media Server | Choose Plex |
 
+{% tabs %}
+{% tab title="Settings" %}
 ![](../../.gitbook/assets/image%20%2813%29.png)
+{% endtab %}
+
+{% tab title="Preview" %}
+![](../../.gitbook/assets/image%20%2819%29.png)
+{% endtab %}
+{% endtabs %}
 
 ### Playlists
 
@@ -95,7 +121,15 @@ With this module, you will be able to show your curated playlists from your Plex
 | Enable | Enable the Plex Playlist Module |
 | Module Minimum Authentication | Minimum Group needed to see Module |
 
+{% tabs %}
+{% tab title="Settings" %}
 ![](../../.gitbook/assets/image%20%2810%29.png)
+{% endtab %}
+
+{% tab title="Preview" %}
+![](../../.gitbook/assets/image%20%2818%29.png)
+{% endtab %}
+{% endtabs %}
 
 ### Misc Options
 
