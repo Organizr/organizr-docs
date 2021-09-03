@@ -25,6 +25,7 @@
 
 * [Authentication \(Backends\)](features/authentication-backends/README.md)
   * [Plex Backend](features/authentication-backends/plex-backend.md)
+  * [LDAP Backend](features/authentication-backends/ldap-backend.md)
 * [SSO](features/sso/README.md)
   * [Plex SSO](features/sso/plex-sso.md)
   * [Tautulli SSO](features/sso/tautulli-sso.md)
