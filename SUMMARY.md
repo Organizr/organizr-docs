@@ -30,6 +30,8 @@
   * [Petio SSO](features/sso/petio-sso.md)
   * [Ombi SSO](features/sso/ombi-sso.md)
   * [Jellyfin SSO](features/sso/jellyfin-sso.md)
+  * [Proxy Auth SSO](features/sso/proxy-auth-sso/README.md)
+    * [Grafana SSO](features/sso/proxy-auth-sso/grafana-sso.md)
   * [Troubleshooting SSO](features/sso/troubleshooting-sso.md)
 * [Homepage](features/homepage/README.md)
   * [Plex Homepage Item](features/homepage/plex-homepage-item.md)
