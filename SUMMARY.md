@@ -33,6 +33,7 @@
   * [Proxy Auth SSO](features/sso/proxy-auth-sso/README.md)
     * [Grafana SSO](features/sso/proxy-auth-sso/grafana-sso.md)
     * [NZBHydra2 SSO](features/sso/proxy-auth-sso/nzbhydra2-sso.md)
+    * [Calibre SSO](features/sso/proxy-auth-sso/calibre-sso.md)
   * [Troubleshooting SSO](features/sso/troubleshooting-sso.md)
 * [Homepage](features/homepage/README.md)
   * [Plex Homepage Item](features/homepage/plex-homepage-item.md)

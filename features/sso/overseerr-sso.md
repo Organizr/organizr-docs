@@ -12,7 +12,7 @@ Using SSO with Overseerr allows you to access the Overseerr UI using only one si
 Settings / System Settings / Single Sign-On / Overseerr
 {% endhint %}
 
-![](../../.gitbook/assets/image%20%2835%29.png)
+![](../../.gitbook/assets/image%20%2836%29.png)
 
 {% hint style="warning" %}
 Overseerr Fallback User & Overseerr Password not used yet.
