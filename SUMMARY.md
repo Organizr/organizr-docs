@@ -23,6 +23,7 @@
 
 ## 🤖 Features
 
+* [Authentication \(Backends\)](features/authentication-backends.md)
 * [SSO](features/sso/README.md)
   * [Plex SSO](features/sso/plex-sso.md)
   * [Tautulli SSO](features/sso/tautulli-sso.md)
