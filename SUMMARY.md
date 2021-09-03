@@ -29,6 +29,7 @@
   * [Overseerr SSO](features/sso/overseerr-sso.md)
   * [Petio SSO](features/sso/petio-sso.md)
   * [Ombi SSO](features/sso/ombi-sso.md)
+  * [Jellyfin SSO](features/sso/jellyfin-sso.md)
   * [Troubleshooting SSO](features/sso/troubleshooting-sso.md)
 * [Homepage](features/homepage/README.md)
   * [Plex Homepage Item](features/homepage/plex-homepage-item.md)
