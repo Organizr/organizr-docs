@@ -25,6 +25,9 @@
 
 * [SSO](features/sso/README.md)
   * [Plex SSO](features/sso/plex-sso.md)
+  * [Tautulli SSO](features/sso/tautulli-sso.md)
+  * [Ombi SSO](features/sso/ombi-sso.md)
+  * [Troubleshooting SSO](features/sso/troubleshooting-sso.md)
 * [Homepage](features/homepage/README.md)
   * [Plex Homepage Item](features/homepage/plex-homepage-item.md)
   * [HealthChecks Homepage Item](features/homepage/healthchecks-homepage-item.md)
