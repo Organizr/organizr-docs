@@ -42,9 +42,24 @@ Change the Authentication type to `Organizr DB + Backend`. Choose `Plex` as the 
 | Enable Plex oAuth | This will bring up a Plex login screen that will flow credentials through plex.tv |
 | Strict Plex Friends | Enabling this option will only allow people from your friends list that have access to the server that you selected for `Plex Machine` |
 
-‌
+## LDAP Backend
 
+{% hint style="info" %}
+Currently there are some limitations to using LDAP
+{% endhint %}
 
+![](../.gitbook/assets/image%20%2839%29.png)
 
-
+| **Type** | **Purpose** |
+| :--- | :--- |
+| Host Address | URL for the LDAP Server |
+| Host Base DN | Hose base distinguished name |
+| Account Prefix | The prefix for the account to build the distinguished name for the login |
+| Account Suffix | The suffix for the account to build the distinguished name for the login |
+| Bind Username | Username to bind the authentication to LDAP Server |
+| Bind Password | Password to bind the authentication to LDAP Server |
+| LDAP Backend Type | Type of LDAP Server |
+| Account DN | Preview of the distinguished name for the login |
+| Enable LDAP SSL | Option to enable the use of SSL for LDAP connections |
+| Enable LDAP TLS | Option to enable the use of TLS for LDAP connections |
 
