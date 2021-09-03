@@ -2,7 +2,7 @@
 description: Supported backends that work with Organizr
 ---
 
-# Authentication \(Backends\)
+# Authentication Backend
 
 ## Summary
 
