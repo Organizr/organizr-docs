@@ -27,6 +27,7 @@
   * [Plex SSO](features/sso/plex-sso.md)
   * [Tautulli SSO](features/sso/tautulli-sso.md)
   * [Overseerr SSO](features/sso/overseerr-sso.md)
+  * [Petio SSO](features/sso/petio-sso.md)
   * [Ombi SSO](features/sso/ombi-sso.md)
   * [Troubleshooting SSO](features/sso/troubleshooting-sso.md)
 * [Homepage](features/homepage/README.md)
