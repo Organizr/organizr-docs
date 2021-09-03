@@ -14,6 +14,10 @@ Settings / System Settings / Single Sign-On / Overseerr
 
 ![](../../.gitbook/assets/image%20%2835%29.png)
 
+{% hint style="warning" %}
+Overseerr Fallback User & Overseerr Password not used yet.
+{% endhint %}
+
 | **Type** | **Purpose** |
 | :--- | :--- |
 | Overseerr URL | URL for your Server's Overseerr Instance |
