@@ -12,7 +12,7 @@ Using SSO with Jellyfin allows you to access the Jellyfin UI using only one sign
 Settings / System Settings / Single Sign-On / Jellyfin
 {% endhint %}
 
-![](../../.gitbook/assets/image%20%2841%29.png)
+![](../../.gitbook/assets/image%20%2842%29.png)
 
 | **Type** | **Purpose** |
 | :--- | :--- |

@@ -12,7 +12,7 @@ Using SSO with Petio allows you to access the Petio UI using only one sign in.
 Settings / System Settings / Single Sign-On / Petio
 {% endhint %}
 
-![](../../.gitbook/assets/image%20%2843%29.png)
+![](../../.gitbook/assets/image%20%2844%29.png)
 
 {% hint style="warning" %}
 Petio Fallback User & Petio Password not used yet.

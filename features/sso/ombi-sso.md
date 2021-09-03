@@ -35,7 +35,7 @@ If you are doing a subdomain for Ombi, go to your tabs and set the Tab URL to:
 
 Please make sure that you have the following options enabled in Ombi.
 
-![](../../.gitbook/assets/image%20%2845%29.png)
+![](../../.gitbook/assets/image%20%2846%29.png)
 
  By enabling those options, your users under User Management should have the `User Type` as `Plex User` now.
 
