@@ -20,6 +20,7 @@
 ---
 
 * [First Time Setup](first-time-setup.md)
+* [Tab Management](tab-management.md)
 
 ## 🤖 Features
 
