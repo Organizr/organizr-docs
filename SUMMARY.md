@@ -67,4 +67,5 @@
   * [Login Looping - SameSite Errors](help/faq/login-looping-samesite-errors.md)
   * [Auth cookie is not used by other subdomains](help/faq/auth-cookie-is-not-used-by-other-subdomains.md)
   * [Update available even though up to date](help/faq/update-available-even-though-up-to-date.md)
+  * [Migration Guide](help/faq/migration-guide.md)
 
