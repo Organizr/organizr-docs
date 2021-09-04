@@ -215,7 +215,7 @@ Now you can go back to Organizr and reload if you haven't and check the settings
 
 #### Custom Homepage Items Missing <a id="bkmrk-custom-homepage-item"></a>
 
-There was a type on the there config item keys.  There are a total of 4 of them.  Go to the file `/api/config/config.php` and change these four keys from the left side of the image to the right side of the image.  All that was missing was the letter `e` 
+There was a type on the there config item keys.  There are a total of 4 of them.  Go to the file `/api/config/config.php` and change these four keys from the left side of the image to the right side of the image.  All that was missing was the letter `e`
 
-[![image-1598799936499.png](https://docs.organizr.app/uploads/images/gallery/2020-08/scaled-1680-/b9KhmSe9oVXa0dfG-image-1598799936499.png)](https://docs.organizr.app/uploads/images/gallery/2020-08/b9KhmSe9oVXa0dfG-image-1598799936499.png)
+![](../../.gitbook/assets/image%20%2852%29.png)
 
