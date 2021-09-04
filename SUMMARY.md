@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Want to help?](want-to-help.md)
 
 ## 💾 Installation
 
