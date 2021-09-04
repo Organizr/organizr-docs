@@ -20,8 +20,8 @@ The second component needed for Organizr to run is PHP.
 3. Type in the following `cmd nssm install php`
    1. Path = `C:\nginx\php\php-cgi.exe`
    2. Startup directory = `C:\nginx\php`
-   3. Arguments = `-b 127.0.0.1:9000`
-   4. [![KTKCbDs.png](https://docs.organizr.app/uploads/images/gallery/2019-03-Mar/scaled-840-0/xfSrbjTdRSCDSkSi-KTKCbDs.png)](https://docs.organizr.app/uploads/images/gallery/2019-03-Mar/xfSrbjTdRSCDSkSi-KTKCbDs.png)
+   3. Arguments = `-b 127.0.0.1:900`
+   4. See image below for Example
 4. Install Service
 5. On the opened cmd prompt type in `nssm start php` to start the PHP service.
 6. If the installed PHP service doesn’t start, then try manually running the `php-cgi.exe` file in `C:\nginx\php\` 
@@ -43,6 +43,8 @@ The second component needed for Organizr to run is PHP.
     1. sqlite3.extension\_dir =
        1. So that is becomes: `sqlite3.extension_dir = ext`
 11. On the opened `cmd`prompt type in `nssm restart php` to restart the PHP service to apply the changes in `php.ini`.
+
+![](../../.gitbook/assets/image%20%2854%29.png)
 
 ## Ubuntu & Debian
 

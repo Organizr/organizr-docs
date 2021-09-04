@@ -4,7 +4,7 @@
 
 Once you have installed Organizr, the first page that you are presented with is the Wizard page.  Here you will enter which License type you want to use along with creating the Admin's credentials.
 
-![](.gitbook/assets/image%20%2859%29.png)
+![](.gitbook/assets/image%20%2860%29.png)
 
 ### **Install Type**
 
@@ -21,7 +21,7 @@ This is where you would choose if this is for Personal Use of Business use,
 
 Here you will need to fill out the Admin's info.  If you choose the personal License and you are using Plex or Emby as a backend you should fill out the username/email/password all the same as that admin's information so you can use SSO.
 
-![](.gitbook/assets/image%20%2857%29.png)
+![](.gitbook/assets/image%20%2858%29.png)
 
 ### **Security**
 
@@ -33,7 +33,7 @@ This is where locking down the system comes into play.  There are 3 fields that 
 | Registration Password | This is the field that is needed for anyone to sign up for you Organizr |
 | API Key | This is auto-generated.  Used to access Organizr's data |
 
-![](.gitbook/assets/image%20%2858%29.png)
+![](.gitbook/assets/image%20%2859%29.png)
 
 ### **Database**
 
@@ -45,7 +45,7 @@ Organizr uses SQLITE for its Database.  All that is needed is what you want to n
 | Current Directory | This where Organizr is located |
 | Parent Directory |  This is the parent directory of where Organizr located  |
 
-![](.gitbook/assets/image%20%2854%29.png)
+![](.gitbook/assets/image%20%2855%29.png)
 
 ### **Verify**
 
@@ -53,7 +53,7 @@ Once you have completed all the steps, you will be taken to an overview page so 
 
 
 
-![](.gitbook/assets/image%20%2856%29.png)
+![](.gitbook/assets/image%20%2857%29.png)
 
 ## **Login Screen**
 

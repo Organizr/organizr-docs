@@ -35,7 +35,7 @@ The first component needed for Organizr to run is a webserver.
    5. Right click on the nginx service and restart
 7. Making your Nginx install PHP ready, uncomment the following code from your nginx.conf file `c:\nginx\conf\nginx.conf`
 
-![](../../../.gitbook/assets/image%20%2855%29.png)
+![](../../../.gitbook/assets/image%20%2856%29.png)
 
 ```text
 location ~ \.php$ {
