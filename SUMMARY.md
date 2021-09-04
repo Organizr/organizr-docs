@@ -59,6 +59,7 @@
 * [Tutorials](help/tutorials/README.md)
   * [Reverse Proxies](help/tutorials/reverse-proxies.md)
 * [FAQ](help/faq/README.md)
+  * [Organizr Requirements](help/faq/organizr-requirements.md)
   * [Forgot my password](help/faq/forgot-password.md)
   * [Organizr Login Error](help/faq/organizr-login-error.md)
   * [Login Looping - SameSite Errors](help/faq/login-looping-samesite-errors.md)
