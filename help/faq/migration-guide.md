@@ -198,7 +198,13 @@ Migrates some settings from 2.0 to 2.1
 {% endapi-method-response-example-description %}
 
 ```
-
+{
+    "response": {
+        "result": "success",
+        "message": "Ran update function for version: 2.1.0",
+        "data": null
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
