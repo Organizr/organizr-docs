@@ -26,6 +26,10 @@
 * [Authentication Backend](features/authentication-backends/README.md)
   * [Plex Backend](features/authentication-backends/plex-backend.md)
   * [LDAP Backend](features/authentication-backends/ldap-backend.md)
+* [Server Authentication](features/server-authentication/README.md)
+  * [Nginx Server Authentication](features/server-authentication/nginx-server-authentication.md)
+  * [Caddy Server Authentication](features/server-authentication/caddy-server-authentication.md)
+  * [Traefik Server Authentication](features/server-authentication/traefik-server-authentication.md)
 * [SSO](features/sso/README.md)
   * [Plex SSO](features/sso/plex-sso.md)
   * [Tautulli SSO](features/sso/tautulli-sso.md)
@@ -42,6 +46,7 @@
   * [Plex Homepage Item](features/homepage/plex-homepage-item.md)
   * [HealthChecks Homepage Item](features/homepage/healthchecks-homepage-item.md)
 * [Backup & Restore](features/backup-and-restore.md)
+* [Custom Error Pages](features/custom-error-pages.md)
 
 ## 🧪 Tweaks
 
@@ -51,10 +56,12 @@
 
 ## 🆘 Help
 
-* [FAQ](help/faq.md)
-* [Forgot my password](help/forgot-password.md)
-* [Update available even though up to date](help/update-available-even-though-up-to-date.md)
-* [Auth cookie is not used by other subdomains](help/auth-cookie-is-not-used-by-other-subdomains.md)
-* [Login Looping - SameSite Errors](help/login-looping-samesite-errors.md)
-* [Organizr Login Error](help/organizr-login-error.md)
+* [Tutorials](help/tutorials/README.md)
+  * [Reverse Proxies](help/tutorials/reverse-proxies.md)
+* [FAQ](help/faq/README.md)
+  * [Forgot my password](help/faq/forgot-password.md)
+  * [Organizr Login Error](help/faq/organizr-login-error.md)
+  * [Login Looping - SameSite Errors](help/faq/login-looping-samesite-errors.md)
+  * [Auth cookie is not used by other subdomains](help/faq/auth-cookie-is-not-used-by-other-subdomains.md)
+  * [Update available even though up to date](help/faq/update-available-even-though-up-to-date.md)
 
