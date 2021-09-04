@@ -14,7 +14,9 @@ Organizr **does not** do any type of proxying. The URL you are putting in the Ta
 
 **Rearranging Tabs:** Hover over the three dots on the left side of the tabs, click and drag to where you want it. 
 
-**Home Symbol \(**[![image-1591313444218.png](https://docs.organizr.app/uploads/images/gallery/2020-06/scaled-1680-/4ZElzKwCdJhWaSpH-image-1591313444218.png)](https://docs.organizr.app/uploads/images/gallery/2020-06/4ZElzKwCdJhWaSpH-image-1591313444218.png)**\):** This will take you to the Homepage setting based on a best guess of your tab name.
+**Home Symbol \(See image below\):** This will take you to the Homepage setting based on a best guess of your tab name.
+
+![](.gitbook/assets/image%20%2860%29.png)
 
 {% hint style="info" %}
 Homepage Items and Tabs are two separate things and one does not configure the other

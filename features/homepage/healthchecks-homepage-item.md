@@ -60,11 +60,11 @@ Enable the API and once enabled click on Show API Keys
 
 Copy the API key \(Top one\) and paste into Organizr
 
-![](../../.gitbook/assets/image%20%2861%29.png)
+![](../../.gitbook/assets/image%20%2862%29.png)
 
 ### **Tips**
 
 You can setup logo/images for the checks if you add an images URL to the tags section for that check
 
-![](../../.gitbook/assets/image%20%2863%29.png)
+![](../../.gitbook/assets/image%20%2864%29.png)
 

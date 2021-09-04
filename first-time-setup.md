@@ -4,7 +4,7 @@
 
 Once you have installed Organizr, the first page that you are presented with is the Wizard page.  Here you will enter which License type you want to use along with creating the Admin's credentials.
 
-![](.gitbook/assets/image%20%2862%29.png)
+![](.gitbook/assets/image%20%2863%29.png)
 
 ### **Install Type**
 
@@ -33,7 +33,7 @@ This is where locking down the system comes into play.  There are 3 fields that 
 | Registration Password | This is the field that is needed for anyone to sign up for you Organizr |
 | API Key | This is auto-generated.  Used to access Organizr's data |
 
-![](.gitbook/assets/image%20%2860%29.png)
+![](.gitbook/assets/image%20%2861%29.png)
 
 ### **Database**
 
