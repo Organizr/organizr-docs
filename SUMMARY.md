@@ -47,6 +47,7 @@
   * [HealthChecks Homepage Item](features/homepage/healthchecks-homepage-item.md)
 * [Backup & Restore](features/backup-and-restore.md)
 * [Custom Error Pages](features/custom-error-pages.md)
+* [Fail2Ban Integration](features/fail2ban-integration.md)
 
 ## 🧪 Tweaks
 
