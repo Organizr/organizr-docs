@@ -4,7 +4,7 @@
 
 Once you have installed Organizr, the first page that you are presented with is the Wizard page.  Here you will enter which License type you want to use along with creating the Admin's credentials.
 
-![](https://docs.organizr.app/uploads/images/gallery/2019-05/scaled-840-/LLpgWKwBIpoohBMM-image-1558564903453.png)
+![](.gitbook/assets/image%20%2853%29.png)
 
 ### **Install Type**
 
