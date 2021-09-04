@@ -25,7 +25,7 @@ The first component needed for Organizr to run is a webserver.
 4. Type in this command `nssm install nginx`
    1. Path = `C:\nginx\nginx.exe`
    2. Startup directory = `C:\nginx`
-   3. [![h21f0uB.png](https://docs.organizr.app/uploads/images/gallery/2019-03-Mar/scaled-840-0/MTmDegf3qIzv4NO9-h21f0uB.png)](https://docs.organizr.app/uploads/images/gallery/2019-03-Mar/MTmDegf3qIzv4NO9-h21f0uB.png)
+   3. See image below for Example
 5. Install service
 6. Make sure you run the service as the admin account
    1. Open run and type in `services.msc`
@@ -34,6 +34,8 @@ The first component needed for Organizr to run is a webserver.
    4. Select ‘This account:’ and fill in your account details and then press ok.
    5. Right click on the nginx service and restart
 7. Making your Nginx install PHP ready, uncomment the following code from your nginx.conf file `c:\nginx\conf\nginx.conf`
+
+![](../../../.gitbook/assets/image%20%2855%29.png)
 
 ```text
 location ~ \.php$ {
