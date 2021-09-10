@@ -103,7 +103,7 @@ location: ~ /organizr-auth/(.*)
 Forward Hostname/IP: ip-address/api/v2/auth/$1
 ```
 
-![](../../.gitbook/assets/image%20%2870%29.png)
+![](../../.gitbook/assets/image%20%2873%29.png)
 
 Modify the proxy host configuration for the service you want ServerAuth for. Modifications are needed in the Advanced section AND the Custom locations section.  Example is a ServerAuth setup for Sonarr \(as a subdomain\):
 
@@ -141,5 +141,5 @@ Only change the IP Address in this URL & Don't forget to change the PORT to matc
 organizr-ip-address/api/v2/auth/$1
 ```
 
-![](../../.gitbook/assets/image%20%2868%29.png)
+![](../../.gitbook/assets/image%20%2866%29.png)
 
