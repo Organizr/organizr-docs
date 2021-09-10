@@ -103,23 +103,43 @@ location: ~ /auth-(.*)
 Forward Hostname/IP: 192.168.1.111/api/v2/auth/$1
 ```
 
-IMAGE HERE SOON
+![](../../.gitbook/assets/image%20%2867%29.png)
 
 Modify the proxy host configuration for the service you want ServerAuth for. Modifications are needed in the Advanced section AND the Custom locations section.  Example is a ServerAuth setup for Sonarr \(as a subdomain\):
 
 Advanced Custom Nginx Configuration section:
 
+{% hint style="info" %}
+**`organizr-auth`** can be any string you like - Just make sure to make it match the Custom Location **`location`** field on the next step.
+{% endhint %}
+
 ```text
-auth_request /auth-4;
+auth_request /organizr-auth/4;
 ```
+
+![](../../.gitbook/assets/image%20%2865%29.png)
 
 Custom Locations Section:
 
+#### Location:
+
+{% hint style="info" %}
+**`organizr-auth`** can be any string you like - Just make sure to make it match the Advanced Tab
+{% endhint %}
+
 ```text
-192.168.1.111/api/v2/auth/$1
+~ /organizr-auth/(.*)
 ```
 
-IMAGE HERE SOON
+#### Forward Hostname / IP
 
+{% hint style="warning" %}
+Only change the IP Address in this URL & Don't forget to change the PORT to match yours
+{% endhint %}
 
+```text
+organizr-ip-address/api/v2/auth/$1
+```
+
+![](../../.gitbook/assets/image%20%2868%29.png)
 
