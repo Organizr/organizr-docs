@@ -20,7 +20,7 @@ Certain providers block wildcard cookies from being set which prevents this from
 
 ### Using the Organizr authorization API
 
-To utilize the block add `auth_request /auth-$;` See table below:
+To utilize the block add `auth_request /organizr-auth/$;` See table below:
 
 | $ | Organizr group\_id |
 | :--- | :--- |
@@ -33,7 +33,7 @@ To utilize the block add `auth_request /auth-$;` See table below:
 | 998 | Any logged in user |
 | 999 | Guest |
 
-For this to work, a URL rewrite directive needs to be added so that the static `/auth-$` locations can be understood by Organizr's authentication API, i.e. use the `/api/v2/auth/$1` format.
+For this to work, a URL rewrite directive needs to be added so that the static `/organizr-auth/$` locations can be understood by Organizr's authentication API, i.e. use the `/api/v2/auth/$1` format.
 
 ### Using OAuth / JWT tokens
 
@@ -82,8 +82,8 @@ Since Organizr uses HS256 signature algorithm, which is a symmetric algorithm, t
 
 This requires the following 2 pieces of information:
 
-* The **name of the cookie** to use to extract the token from. This value is dynamic, of the form `organizr_token_<uuid>` where `<uuid>` is your Organizr instance's `$GLOBALS['uuid']` value.
-* The **secret** to use to validate the token signature, which is your Organizr instance's `$GLOBALS['organizrHash']` value.
+* The **name of the cookie** to use to extract the token from. This value is dynamic, of the form `organizr_token_<uuid>` where `<uuid>` is your Organizr instance's `$this->config['uuid']` value.
+* The **secret** to use to validate the token signature, which is your Organizr instance's `$this->config['organizrHash']` value.
 
 Both these values can be taken from your Organizr server's `www/Dashboard/api/config/config.php` after initial setup.
 

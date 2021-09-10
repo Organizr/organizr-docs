@@ -43,7 +43,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.frontend.rule=Host: nzbget.your_domain.com"
-      - "traefik.frontend.auth.forward.address=http://organizr/api/v2/auth?group=1"
+      - "traefik.frontend.auth.forward.address=http://organizr/api/v2/auth/1"
       - "traefik.port=6789"
     depends_on:
       - traefik
@@ -87,7 +87,7 @@ services:
       - "traefik.http.routers.nzbget.rule=Host(`nzbget.your_domain.com`)'
       - "traefik.http.services.nzbget.loadbalancer.server.port=6789"
       - "traefik.http.routers.nzbget.middlewares=auth"
-      - "traefik.http.middlewares.auth.forwardauth.address=http://organizr/api/v2/auth?group=1"
+      - "traefik.http.middlewares.auth.forwardauth.address=http://organizr/api/v2/auth/1"
     depends_on:
       - traefik
       - organizr

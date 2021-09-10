@@ -16,7 +16,7 @@ reauth {
     # if someone is not authorized for a page, send them here instead
     failure redirect target=https://<your_domain>/
     
-    upstream url=https://<your_domain>/api/v2/auth?group=<group_id>,cookies=true
+    upstream url=https://<your_domain>/api/v2/auth/<group_id>,cookies=true
 }
 ```
 
