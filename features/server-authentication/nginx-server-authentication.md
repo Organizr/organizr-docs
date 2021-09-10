@@ -11,16 +11,16 @@ After reading about how Server Authentication works, next we will need to set up
 ### Native Nginx
 
 ```text
-location ~ /auth-(.*) {
+location ~ /organizr-auth/(.*) {
 	internal;
-	rewrite ^/auth-(.*) /api/v2/auth/$1;
+	rewrite ^/organizr-auth/(.*) /api/v2/auth/$1;
 }
 ```
 
 ### Docker Container
 
 ```text
-location ~ /auth-(.*) {
+location ~ /organizr-auth/(.*) {
         internal;
         proxy_pass http://[docker/hostIP]:[port]/api/v2/auth/$1;
         proxy_set_header Content-Length "";
@@ -37,7 +37,7 @@ For subdomains, add the `auth_request` same as you would for a subfolder and add
 
 ```text
 include /config/nginx/proxy-confs/organizr-auth.subfolder.conf;
-auth_request /auth-0;
+auth_request /organizr-auth/0;
 ```
 
 {% hint style="info" %}
@@ -53,7 +53,7 @@ Native, with local DNS setup \(This can also apply for containers\): `http://web
 Docker, using ip and port \(This is assuming the container is running in bridge\): `http://192.168.9.5:8080/api/v2/auth/$1`
 
 ```text
-location ~ ^/auth-(.*) {
+location ~ ^/organizr-auth/(.*) {
     ## Has to be local ip or local DNS name
     proxy_pass https://web.home.lab/api/v2/auth/$1;
     proxy_pass_request_body off;
@@ -64,13 +64,13 @@ location ~ ^/auth-(.*) {
 
 ### **How to include the authorization block in a reverse proxy**
 
-All you need to do is include one line per reverse proxy block as the very first line: `auth_request /auth-0;` Where **/auth-0** is the access level for admin. 
+All you need to do is include one line per reverse proxy block as the very first line: `auth_request /organizr-auth/0;` Where **/organizr-auth/0** is the access level for admin. 
 
 Here is a sample of a reverse proxy with admin access:
 
 ```text
 location /[SERVICE] {
-    auth_request /auth-0;
+    auth_request /organizr-auth/0;
     proxy_pass http://[IP]:[PORT];
     add_header X-Frame-Options "SAMEORIGIN";
     proxy_set_header Host $host;
@@ -86,7 +86,7 @@ Most of our [examples](https://github.com/organizrTools/Config-Collections-for-N
 ```text
 location /sonarr {
     proxy_pass http://127.0.0.1:8989/sonarr;
-    auth_request /auth-0;
+    auth_request /organizr-auth/0;
     location /sonarr/api { # We know that sonarr's api-endpoint is /api, so we are gonna open that up.
         auth_request off; # The line that actually opens it up
         proxy_pass http://127.0.0.1:8989/sonarr/api; # We need to tell nginx where to send the request
