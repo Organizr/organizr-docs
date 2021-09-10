@@ -96,14 +96,14 @@ location /sonarr {
 
 ### NPM
 
-Please read the red bubbles in the screenshots carefully. Modify your Organizr proxy host configuration to include a custom location. Example where 192.168.1.111 is local IP and 8283 is the port where Organizr is hosted:
+Please read the red bubbles in the screenshots carefully. Modify your Organizr proxy host configuration to include a custom location. Example where **`ip-address`** is local IP and **`8000`** is the port where Organizr is hosted:
 
 ```text
-location: ~ /auth-(.*)
-Forward Hostname/IP: 192.168.1.111/api/v2/auth/$1
+location: ~ /organizr-auth/(.*)
+Forward Hostname/IP: ip-address/api/v2/auth/$1
 ```
 
-![](../../.gitbook/assets/image%20%2867%29.png)
+![](../../.gitbook/assets/image%20%2870%29.png)
 
 Modify the proxy host configuration for the service you want ServerAuth for. Modifications are needed in the Advanced section AND the Custom locations section.  Example is a ServerAuth setup for Sonarr \(as a subdomain\):
 
