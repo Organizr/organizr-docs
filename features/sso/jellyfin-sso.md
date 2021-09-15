@@ -20,3 +20,11 @@ Settings / System Settings / Single Sign-On / Jellyfin
 | Jellyfin SSO URL | URL for to pass to Jellyfin for SSO |
 | Enable | Enable Jellyfin SSO |
 
+## Tips
+
+{% hint style="warning" %}
+SSO doesn't work if Reverse Proxy is a subdomain - It must be on the same domain as Organizr
+{% endhint %}
+
+
+
