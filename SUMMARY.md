@@ -48,6 +48,7 @@
   * [Sonarr Homepage Item](features/homepage/sonarr-homepage-item.md)
   * [Plex Homepage Item](features/homepage/plex-homepage-item.md)
   * [HealthChecks Homepage Item](features/homepage/healthchecks-homepage-item.md)
+* [API Socks](features/api-socks.md)
 * [Backup & Restore](features/backup-and-restore.md)
 * [Custom Error Pages](features/custom-error-pages.md)
 * [Fail2Ban Integration](features/fail2ban-integration.md)
