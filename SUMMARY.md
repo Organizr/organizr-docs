@@ -45,6 +45,7 @@
     * [Calibre SSO](features/sso/proxy-auth-sso/calibre-sso.md)
   * [Troubleshooting SSO](features/sso/troubleshooting-sso.md)
 * [Homepage](features/homepage/README.md)
+  * [Sonarr Homepage Item](features/homepage/sonarr-homepage-item.md)
   * [Plex Homepage Item](features/homepage/plex-homepage-item.md)
   * [HealthChecks Homepage Item](features/homepage/healthchecks-homepage-item.md)
 * [Backup & Restore](features/backup-and-restore.md)
