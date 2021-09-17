@@ -28,16 +28,18 @@ When setting up the homepage item, the first option is to enable it, do that by 
  Please make sure not to set the `Minimum Authentication` to at least the same or lower than the homepage's `Tab Group`
 {% endhint %}
 
+![](../../.gitbook/assets/image%20%2878%29.png)
+
 | **Field** | **Value** |
 | :--- | :--- |
 | Enable | Enable the Module |
 | Main Module Minimum Authentication | Minimum Group needed to see Entire Module |
 
-![](../../.gitbook/assets/image%20%2878%29.png)
-
 ### Connection
 
 Enter the connection details of your Sonarr server.  This homepage item allows multiple Sonarr server connections.
+
+![](../../.gitbook/assets/image%20%2875%29.png)
 
 | **Field** | **Value** |
 | :--- | :--- |
@@ -45,8 +47,6 @@ Enter the connection details of your Sonarr server.  This homepage item allows m
 | Multiple API Key/Token's | API Keys to your Sonarr Servers |
 | Disable Certificate Check | Disables the Certificate of the URL provided if https |
 | Use Custom Certificate | Uses a Custom Certificate for the verification of the URL provided if https |
-
-![](../../.gitbook/assets/image%20%2875%29.png)
 
 ### API Socks
 
