@@ -4,7 +4,7 @@ description: Homepage Item Information
 
 # Sonarr Homepage Item
 
-![](../../.gitbook/assets/image%20%2880%29.png)
+![](../../.gitbook/assets/image%20%2874%29.png)
 
 {% embed url="https://sonarr.tv/" %}
 
@@ -28,7 +28,7 @@ When setting up the homepage item, the first option is to enable it, do that by 
  Please make sure not to set the `Minimum Authentication` to at least the same or lower than the homepage's `Tab Group`
 {% endhint %}
 
-![](../../.gitbook/assets/image%20%2878%29.png)
+![](../../.gitbook/assets/image%20%2879%29.png)
 
 | **Field** | **Value** |
 | :--- | :--- |
@@ -39,7 +39,7 @@ When setting up the homepage item, the first option is to enable it, do that by 
 
 Enter the connection details of your Sonarr server.  This homepage item allows multiple Sonarr server connections.
 
-![](../../.gitbook/assets/image%20%2875%29.png)
+![](../../.gitbook/assets/image%20%2876%29.png)
 
 | **Field** | **Value** |
 | :--- | :--- |
@@ -56,7 +56,7 @@ Organizr's API Socks allows you to access Sonarr's API without needing to Revers
 
 {% tabs %}
 {% tab title="Settings" %}
-![](../../.gitbook/assets/image%20%2879%29.png)
+![](../../.gitbook/assets/image%20%2880%29.png)
 
 | **Field** | **Value** |
 | :--- | :--- |
@@ -66,7 +66,7 @@ Organizr's API Socks allows you to access Sonarr's API without needing to Revers
 {% endtab %}
 
 {% tab title="Preview" %}
-![](../../.gitbook/assets/image%20%2876%29.png)
+![](../../.gitbook/assets/image%20%2877%29.png)
 {% endtab %}
 {% endtabs %}
 
@@ -120,7 +120,7 @@ Enabling this module will output Sonarr's Download Queue on the homepage.
 
 {% tabs %}
 {% tab title="Settings" %}
-![](../../.gitbook/assets/image%20%2882%29.png)
+![](../../.gitbook/assets/image%20%2883%29.png)
 
 | **Field** | **Value** |
 | :--- | :--- |
@@ -133,7 +133,7 @@ Enabling this module will output Sonarr's Download Queue on the homepage.
 {% tab title="Homepage Preview" %}
 Better preview coming soon...
 
-![](../../.gitbook/assets/image%20%2874%29.png)
+![](../../.gitbook/assets/image%20%2875%29.png)
 {% endtab %}
 {% endtabs %}
 
@@ -143,7 +143,7 @@ This module adds past and future TV Shows on the homepage Calendar
 
 {% tabs %}
 {% tab title="Settings" %}
-![](../../.gitbook/assets/image%20%2883%29.png)
+![](../../.gitbook/assets/image%20%2884%29.png)
 
 | **Field** | **Value** |
 | :--- | :--- |
@@ -159,7 +159,7 @@ This module adds past and future TV Shows on the homepage Calendar
 {% endtab %}
 
 {% tab title="Homepage Preview" %}
-![](../../.gitbook/assets/image%20%2877%29.png)
+![](../../.gitbook/assets/image%20%2878%29.png)
 {% endtab %}
 {% endtabs %}
 
@@ -169,5 +169,5 @@ This module adds past and future TV Shows on the homepage Calendar
  Make sure to save before hitting the `Test Connection` button
 {% endhint %}
 
-![](../../.gitbook/assets/image%20%2881%29.png)
+![](../../.gitbook/assets/image%20%2882%29.png)
 
