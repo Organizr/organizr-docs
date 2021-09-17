@@ -4,11 +4,19 @@ description: Homepage Item Information
 
 # Sonarr Homepage Item
 
+{% tabs %}
+{% tab title="About" %}
 ![](../../.gitbook/assets/image%20%2874%29.png)
 
-{% embed url="https://sonarr.tv/" %}
+Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.
+{% endtab %}
 
-{% embed url="https://github.com/Sonarr/Sonarr" %}
+{% tab title="Links" %}
+{% embed url="https://sonarr.tv/" caption="Main site" %}
+
+{% embed url="https://github.com/Sonarr/Sonarr" caption="GitHub" %}
+{% endtab %}
+{% endtabs %}
 
 ## Summary
 
