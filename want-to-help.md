@@ -12,9 +12,11 @@ We are always looking for someone who would like to join us and help.  No matter
 
 Join us and help contribute to Organizr's Documentation.  The link to join is here:
 
-{% embed url="https://app.gitbook.com/invite/organizr?invite=-Mk8L6dFnP8ruaL1sal1" %}
+{% embed url="https://app.gitbook.com/invite/organizr?invite=-Mk8L6dI7TUmp7hGOgDM" %}
 
-Once you have joined, hop onto our Discord server and let us know which username you signed up with on Gitbook and we can apply the correct permissions for you.
+Once you have joined, hop onto our Discord server and let us know which username you signed up with on Gitbook and we can apply the correct permissions for you or add your name to this list after you use the invite link:
+
+{% embed url="https://app.gitbook.com/@organizr/s/requesting-write-access/" %}
 
 ## Support in Discord
 
