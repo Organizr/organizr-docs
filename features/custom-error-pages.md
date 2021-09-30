@@ -105,5 +105,15 @@ error_page 400 402 403 404 405 408 500 502 503 504  $scheme://organizr.app/api/v
 {% endtab %}
 {% endtabs %}
 
+## Organizr Reverse Proxy
 
+If you have Organizr Reversed Proxied, which we are sure you do.  You need to add an additional block for the API so it doesn't overwrite the errors for it.
+
+```text
+location /api {
+    include /config/nginx/proxy.conf; # Replace with any proxy config options
+    proxy_pass http://organizr-ip:organizr-port;
+    proxy_intercept_errors off; # This is the important part
+}
+```
 
