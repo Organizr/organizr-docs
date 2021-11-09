@@ -2,13 +2,21 @@
 
 ## Summary
 
-blah
+Here are the many ways you can install Organizr.
+
+## Auto Installer
+
+Organizr has an Auto Installer that works on Windows and some flavors of Linux. &#x20;
+
+{% content-ref url="prerequisites/installing-webservers/organizr-and-dependency-installer/" %}
+[organizr-and-dependency-installer](prerequisites/installing-webservers/organizr-and-dependency-installer/)
+{% endcontent-ref %}
 
 ## Docker
 
 ### Installing via CLI
 
-```text
+```
 docker create \
   --name=organizr \
   -v <path to data>:/config \
@@ -21,7 +29,7 @@ docker create \
 
 ### Installing via Compose File
 
-```text
+```
 version: "3.6"
 services:
     organizr:
@@ -41,7 +49,7 @@ services:
 
 ### More Information
 
- Head over to [https://github.com/Organizr/docker-organizr](https://github.com/Organizr/docker-organizr) to see more information.
+&#x20;Head over to [https://github.com/Organizr/docker-organizr](https://github.com/Organizr/docker-organizr) to see more information.
 
 ## Windows
 
@@ -51,9 +59,13 @@ services:
 Make sure you have setup Nginx and PHP
 {% endhint %}
 
-{% page-ref page="prerequisites/installing-webservers/nginx.md" %}
+{% content-ref url="prerequisites/installing-webservers/nginx.md" %}
+[nginx.md](prerequisites/installing-webservers/nginx.md)
+{% endcontent-ref %}
 
-{% page-ref page="prerequisites/installing-php.md" %}
+{% content-ref url="prerequisites/installing-php.md" %}
+[installing-php.md](prerequisites/installing-php.md)
+{% endcontent-ref %}
 
 {% hint style="warning" %}
 Make sure you have enabled php\_pdo\_sqlite.dll & php\_openssl.dll PHP extensions.
@@ -70,7 +82,7 @@ Make sure you have enabled php\_pdo\_sqlite.dll & php\_openssl.dll PHP extension
 You may use this Nginx config file if you would like
 {% endhint %}
 
-```text
+```
 #user  nobody;
 worker_processes  1;
 
@@ -108,7 +120,7 @@ http {
 
 ## Ubuntu & Debian
 
-### Navigate to Webserver Directory <a id="bkmrk-installing-organizr"></a>
+### Navigate to Webserver Directory <a href="bkmrk-installing-organizr" id="bkmrk-installing-organizr"></a>
 
 1. Navigate to your website path with `cd /var/www/websites/roxinsocks.com`
    1. Replace the domain path in the webserver path with the correct path
@@ -118,7 +130,7 @@ http {
 {% tab title="Git" %}
 Copy this command and paste into your terminal
 
-```text
+```
 git clone https://github.com/causefx/Organizr /var/www/websites/roxinsocks.com
 ```
 
@@ -140,7 +152,7 @@ You may need to install `wget` if you don't have it installed: `apt-get install 
 
 Unzip the file with the following command while replacing the file path with the location to your servers domain files
 
-```text
+```
 unzip v2-master.zip -d /var/www/websites/roxinsocks.com
 ```
 {% endtab %}
@@ -148,12 +160,12 @@ unzip v2-master.zip -d /var/www/websites/roxinsocks.com
 
 All your Organizr files are now installed at `/var/www/websites/roxinsocks.com/`
 
-### Permissions & Access <a id="bkmrk-permissions-%26-access"></a>
+### Permissions & Access <a href="bkmrk-permissions-26-access" id="bkmrk-permissions-26-access"></a>
 
 1. Set the permission to your path, so that Organizr can write to it by running `chown -R www-data:www-data /var/www/websites/roxinsocks.com/`
-2. For external access and functionality, edit your nginx sites-enabled config file for your domain \(`nano /etc/nginx/sites-enabled/roxinsocks.com`\), and be sure the `root` is set correctly in the server block. This will tell nginx where to look for organizr, when you navigate to your domain:
+2. For external access and functionality, edit your nginx sites-enabled config file for your domain (`nano /etc/nginx/sites-enabled/roxinsocks.com`), and be sure the `root` is set correctly in the server block. This will tell nginx where to look for organizr, when you navigate to your domain:
 
-```text
+```
 server{
     root /var/www/websites/roxinsocks.com;
     index index.php index.html index.htm index.nginx-debian.html;
@@ -173,36 +185,36 @@ server{
 You may need to change the path to the socket depending on what version of PHP you installed
 {% endhint %}
 
-    3. Navigate to that path locally using your web browser and the host's local ip address. `http://localhost` or `http://192.168.1.###` You should be able to login and establish your admin account.
+&#x20;   3\. Navigate to that path locally using your web browser and the host's local ip address. `http://localhost` or `http://192.168.1.###` You should be able to login and establish your admin account.
 
 ## Helm
 
- Our helm chart is maintained by the guys over at [k8s@home.](https://github.com/k8s-at-home/charts/) This uses the official docker container.
+&#x20;Our helm chart is maintained by the guys over at [k8s@home.](https://github.com/k8s-at-home/charts/) This uses the official docker container.
 
 ### **Links**
 
-| Repo | Link |
-| :--- | :--- |
+| Repo                    | Link                                                                                             |
+| ----------------------- | ------------------------------------------------------------------------------------------------ |
 | Chart Github Repository | [k8s-at-home/charts/organizr](https://github.com/k8s-at-home/charts/tree/master/charts/organizr) |
-| Chart Helm Repository | [k8s-at-home](https://k8s-at-home.com/charts/) |
-| Artifacthub | [k8s-at-home/organizr](https://artifacthub.io/packages/helm/k8s-at-home/organizr) |
+| Chart Helm Repository   | [k8s-at-home](https://k8s-at-home.com/charts/)                                                   |
+| Artifacthub             | [k8s-at-home/organizr](https://artifacthub.io/packages/helm/k8s-at-home/organizr)                |
 
 ### TL;DR
 
-```text
+```
 helm repo add k8s-at-home https://k8s-at-home.com/charts
 helm install organizr k8s-at-home/organizr --values values.yaml # User supplied
 ```
 
 ### **Installing**
 
-1.  Add the helm repository for k8s-at-home
+1. &#x20;Add the helm repository for k8s-at-home
 2. Read through the values.yaml file either in the github repository or via helm commands
 3. Deploy a named release with your override values.yaml file
 
 ### **Example Commands**
 
-```text
+```
 helm repo add k8s-at-home https://k8s-at-home.com/charts
 # these next 2 lines are convenience lines to build a full values file for modification. 
 # You can construct your own overrides as you see fit.
@@ -216,7 +228,7 @@ helm install organizr k8s-at-home/organizr --values values.yaml
 
 ### Example values.yaml override
 
-```text
+```
 organizr:
   imagePullSecrets: []
   fullnameOverride: organizr
@@ -251,4 +263,3 @@ organizr:
       cpu: 100m
       memory: 128Mi
 ```
-
