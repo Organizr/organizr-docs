@@ -18,7 +18,7 @@
 
 ## 📌Getting started
 
----
+***
 
 * [First Time Setup](first-time-setup.md)
 * [Tab Management](tab-management.md)
@@ -59,6 +59,10 @@
 * [Hide custom text from specific groups](tweaks/hide-custom-text-from-specific-groups.md)
 * [Optimizing PHP-FPM](tweaks/optimizing-php-fpm.md)
 
+***
+
+* [Plugin Development](plugin-development.md)
+
 ## 🆘 Help
 
 * [Tutorials](help/tutorials/README.md)
@@ -71,4 +75,3 @@
   * [Auth cookie is not used by other subdomains](help/faq/auth-cookie-is-not-used-by-other-subdomains.md)
   * [Update available even though up to date](help/faq/update-available-even-though-up-to-date.md)
   * [Migration Guide](help/faq/migration-guide.md)
-
