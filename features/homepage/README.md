@@ -6,7 +6,7 @@ The homepage houses all of your media items formatted in a very nice UI for you 
 
 ### Homepage Output
 
-![](../../.gitbook/assets/image%20%2828%29.png)
+![](<../../.gitbook/assets/image (28).png>)
 
 ### Setting up the Homepage Tab
 
@@ -14,11 +14,11 @@ The homepage houses all of your media items formatted in a very nice UI for you 
 Settings / Tab Editor / Tabs
 {% endhint %}
 
-![](../../.gitbook/assets/image%20%2821%29.png)
+![](<../../.gitbook/assets/image (21).png>)
 
-By default, Organizr automatically sets up the Tab for the homepage but it will not be active.  To activate it just toggle the `Active` switch.  Once it is active, you can now configure `Category` and `Group` which you can get to by clicking the📝 button.
+By default, Organizr automatically sets up the Tab for the homepage but it will not be active.  To activate it just toggle the `Active` switch.  Once it is active, you can now configure `Category` and `Group` which you can get to by clicking the:pencil: button.
 
-![](../../.gitbook/assets/image%20%2820%29.png)
+![](<../../.gitbook/assets/image (20).png>)
 
 The URL will never change as that points to the Organizr API.  You may change the `Tab Name` and `Tab Image` to anything you like.  As for the other options, those are covered in `Adding a New Tab`
 
@@ -28,7 +28,6 @@ The URL will never change as that points to the Organizr API.  You may change th
 Settings / Tab Editor / Homepage Items
 {% endhint %}
 
-![](../../.gitbook/assets/image%20%2825%29.png)
+![](<../../.gitbook/assets/image (25).png>)
 
 To setup a Homepage item, all you need to do is click on any of the homepage items to edit those settings.  You may head to each Homepage item information page next.
-

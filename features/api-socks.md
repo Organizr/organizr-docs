@@ -11,14 +11,14 @@ Do you need access to a services API through WAN but don't want to reverse proxy
 ## Supported Apps
 
 | Application | Supports Multiple Servers |
-| :--- | :--- |
-| Sonarr | Yes |
-| Radarr | Yes |
-| Lidarr | Yes |
-| Tautulli | Yes |
-| SabNZBd | No |
-| NZBGet | No |
-| qBittorrent | No |
+| ----------- | ------------------------- |
+| Sonarr      | Yes                       |
+| Radarr      | Yes                       |
+| Lidarr      | Yes                       |
+| Tautulli    | Yes                       |
+| SabNZBd     | No                        |
+| NZBGet      | No                        |
+| qBittorrent | No                        |
 
 ## URL Endpoints
 
@@ -28,18 +28,18 @@ Do you need access to a services API through WAN but don't want to reverse proxy
 Make sure to replace the corresponding fields
 {% endhint %}
 
-| Field | Value |
-| :--- | :--- |
+| Field              | Value                            |
+| ------------------ | -------------------------------- |
 | {ORGANIZR\_DOMAIN} | Domain of your Organizr instance |
-| {SERVICE} | Supported Application |
+| {SERVICE}          | Supported Application            |
 
-```text
+```
 http://{ORGANIZR_DOMAIN}/api/v2/socks/{SERVICE}/
 ```
 
 I.E.
 
-```text
+```
 http://demo.organizr.app/api/v2/socks/sonarr/
 ```
 {% endtab %}
@@ -51,19 +51,19 @@ http://demo.organizr.app/api/v2/socks/sonarr/
 Make sure to replace the corresponding fields
 {% endhint %}
 
-| Field | Value |
-| :--- | :--- |
-| {ORGANIZR\_DOMAIN} | Domain of your Organizr instance |
-| {SERVICE} | Supported Application |
-| {\#} | Id of Supported Application \(Order in Organizr\) |
+| Field              | Value                                           |
+| ------------------ | ----------------------------------------------- |
+| {ORGANIZR\_DOMAIN} | Domain of your Organizr instance                |
+| {SERVICE}          | Supported Application                           |
+| {#}                | Id of Supported Application (Order in Organizr) |
 
-```text
+```
 http://{ORGANIZR_DOMAIN}/api/v2/multiple/socks/{SERVICE}/{#}
 ```
 
 I.E.
 
-```text
+```
 http://demo.organizr.app/api/v2/multiple/socks/sonarr/1
 http://demo.organizr.app/api/v2/multiple/socks/sonarr/2
 http://demo.organizr.app/api/v2/multiple/socks/sonarr/3
@@ -73,36 +73,20 @@ http://demo.organizr.app/api/v2/multiple/socks/sonarr/3
 
 ## Example API Call
 
-{% api-method method="get" host="https://demo.organizr.app/api" path="/v2/socks/sonarr/api/system/status?apikey=sonarrAPIkey" %}
-{% api-method-summary %}
-API Socks
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://demo.organizr.app/api" path="/v2/socks/sonarr/api/system/status?apikey=sonarrAPIkey" method="get" summary="API Socks" %}
+{% swagger-description %}
 Calls Sonarr's API
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="apikey" type="string" required=true %}
+{% swagger-parameter in="path" name="apikey" type="string" %}
 Sonarr's API Key
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Token" type="string" required=false %}
+{% swagger-parameter in="header" name="Token" type="string" %}
 Organizr's API Key
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Success
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Success" %}
 ```
 {
   "version": "3.0.6.1265",
@@ -128,13 +112,9 @@ Success
   "runtimeName": "mono"
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=401 %}
-{% api-method-response-example-description %}
-User Unauthorized
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="401" description="User Unauthorized" %}
 ```
 {
     "response": {
@@ -144,8 +124,5 @@ User Unauthorized
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

@@ -10,9 +10,8 @@ description: Sometimes your docker container may lock up on update or restart
 
 * [ ] Remove `index.lock`if it tells you to
 * [ ] Restart container
-* [ ] Profit
+*   [ ] Profit
 
-  
-
+    \
 
 
