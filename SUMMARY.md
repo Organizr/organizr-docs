@@ -39,7 +39,7 @@
   * [Petio SSO](features/sso/petio-sso.md)
   * [Ombi SSO](features/sso/ombi-sso.md)
   * [Jellyfin SSO](features/sso/jellyfin-sso.md)
-  * [Komga SSO](features/sso/jellyfin-sso-1.md)
+  * [Komga SSO](features/sso/komga-sso.md)
   * [Proxy Auth SSO](features/sso/proxy-auth-sso/README.md)
     * [Grafana SSO](features/sso/proxy-auth-sso/grafana-sso.md)
     * [NZBHydra2 SSO](features/sso/proxy-auth-sso/nzbhydra2-sso.md)
