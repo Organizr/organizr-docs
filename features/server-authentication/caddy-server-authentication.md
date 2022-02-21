@@ -8,7 +8,11 @@ description: Utilizing Caddy's reauth
 
 Using Caddy and the reauth plugin you can accomplish the same using the following block:
 
-```text
+{% hint style="info" %}
+The reauth plugin doesn't seem to be fully working with Caddy v2, use the JWT method below
+{% endhint %}
+
+```
 reauth {
     path /sonarr   # location that requires reauth
     # path /glances   # other directories can be listed
@@ -24,7 +28,7 @@ reauth {
 
 Here is a sample Caddy directive to protect a path using the Organizr token:
 
-```text
+```
 jwt {
     # Name of the path to protect
     path /protected
@@ -44,15 +48,36 @@ jwt {
 }
 ```
 
- The secret to use to validate the token needs to be passed to Caddy either as an environment variable named `JWT_SECRET` or in a file, specified with the `secret` configuration option.
+&#x20;The secret to use to validate the token needs to be passed to Caddy either as an environment variable named `JWT_SECRET` or in a file, specified with the `secret` configuration option.
 
 {% hint style="info" %}
- Note that the http.jwt plugin is not installed in default Caddy builds. See [https://caddyserver.com/docs/http.jwt](https://caddyserver.com/docs/http.jwt) for instructions on how to install it.
+&#x20;Note that the http.jwt plugin is not installed in default Caddy builds. See [https://caddyserver.com/docs/http.jwt](https://caddyserver.com/docs/http.jwt) for instructions on how to install it.
 {% endhint %}
 
- See [https://github.com/BTBurke/caddy-jwt](https://github.com/BTBurke/caddy-jwt) for more information on the jwt plugin and its configuration options.
+&#x20;See [https://github.com/BTBurke/caddy-jwt](https://github.com/BTBurke/caddy-jwt) for more information on the jwt plugin and its configuration options.
 
 {% hint style="info" %}
- You should not protect the `/` Organizr root path. Organizr handles it on its own.
+&#x20;You should not protect the `/` Organizr root path. Organizr handles it on its own.
 {% endhint %}
 
+### Caddy v2
+
+For Caddy v2, the caddy-security plugin seems to be the successor to caddy-jwt. The syntax has changed slightly to be something like this:
+
+```
+route /tautulli* {
+    authorize {
+        primary yes
+        set auth url https://mydomain.com
+        allow roles User Admin
+        crypto key token name organizr_token_uuid
+        crypto key verify organizrHash
+    }
+    reverse_proxy localhost:8181
+}
+
+route /sonarr* {
+    authorize
+    reverse_proxy localhost:8989
+}
+```
