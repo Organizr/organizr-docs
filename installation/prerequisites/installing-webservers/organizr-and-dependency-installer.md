@@ -1,12 +1,50 @@
----
-description: Organizr & Dependency Installer for Ubuntu & Debian
----
+# Organizr & Dependency Installer
 
-# Ubuntu & Debian
+{% tabs %}
+{% tab title="Windows" %}
+## OWI (Organizr Windows Installer) <a href="#bkmrk-windows-here" id="bkmrk-windows-here"></a>
 
+![](https://camo.githubusercontent.com/4324aec22434796df57feea80536aac768306c90a28543dbd425603fa7d8eeb2/68747470733a2f2f692e696d6775722e636f6d2f4e3675395837642e706e67)
+
+## Requirements
+
+{% hint style="info" %}
+Currently x64 bit OS only.
+{% endhint %}
+
+* Latest version of PowerShell, if you're on Windows 7/Win Server 2008 [download](https://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)
+* Windows 10 recommended but it should work on Windows 7 if you have the latest version of PowerShell
+* The user account running the installer should have admin privileges and a password set.
+
+### OWI Tested on the following OS Versions:
+
+* Windows 10 Pro (Fall creators update)
+* Windows Server 2012 R2
+
+### What does it do?
+
+* Downloads Nginx, PHP, NSSM and Visual C++ Redistributable
+* Creates services for Nginx and PHP
+* Downloads Organizr
+* Configures PHP as per Org requirements
+* Adds in a working Nginx conf file with PHP block enabled
+
+### Steps
+
+1. Clone\Download the OWI folder from: [https://github.com/elmerfdz/OrganizrInstaller](https://github.com/elmerfdz/OrganizrInstaller)
+2. Extract the zip file to your `desktop`
+3. Navigate to `\OrganizrInstaller\windows\owi`
+4. Right-click on `owi_installer.bat` and click on `Run as administrator`
+5. Installer will ask you for the nginx install location, type in the full path as per the e.g. `c:\nginx`
+6. The installer will ask you to provide the password of the current user during installation, the nginx service requires that you run it under a user account instead of the 'Local System' account, if you don't then you won't be able to save and reload your nginx config
+{% endtab %}
+
+{% tab title="Ubuntu/Debian" %}
 ## OUI (Organizr Ubuntu Installer) <a href="#bkmrk-windows-here" id="bkmrk-windows-here"></a>
 
-#### Requirements
+![](https://camo.githubusercontent.com/710edb7402bba5237fa129dd448030b2ee75896e11fc9065af8168fe6fa3411d/68747470733a2f2f692e696d6775722e636f6d2f72396c616a7a572e706e67)
+
+## Requirements
 
 * Git (`sudo apt-get install git`)
 
@@ -129,3 +167,27 @@ server{
 You may need to change the path to the socket depending on what version of PHP you installed
 
 &#x20;   3\. Navigate to that path locally using your web browser and the host's local ip address. `http://localhost` or `http://192.168.1.###` You should be able to login and establish your admin account.
+{% endtab %}
+
+{% tab title="CentOS" %}
+## OCI (Organizr CentOS Installer)
+
+![](https://camo.githubusercontent.com/76652c658e3fa6fa812b9f498307ed15dafd4ad155723273f97a1377019b8fae/68747470733a2f2f692e696d6775722e636f6d2f376e536e41586c2e706e67)
+
+## Requirements
+
+* Git (`sudo yum install git`)
+
+#### Tested on version?
+
+* CentOS 7
+
+### How do I run it?
+
+1. `sudo yum install git`
+2. `sudo git clone https://github.com/elmerfdz/OrganizrInstaller /opt/OrganizrInstaller`
+3. `cd /opt/OrganizrInstaller/centos/oci`
+4. `sudo bash oc_installer.sh`
+{% endtab %}
+{% endtabs %}
+

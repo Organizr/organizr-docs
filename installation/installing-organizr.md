@@ -8,8 +8,8 @@ Here are the many ways you can install Organizr.
 
 Organizr has an Auto Installer that works on Windows and some flavors of Linux. &#x20;
 
-{% content-ref url="prerequisites/installing-webservers/organizr-and-dependency-installer/" %}
-[organizr-and-dependency-installer](prerequisites/installing-webservers/organizr-and-dependency-installer/)
+{% content-ref url="prerequisites/installing-webservers/organizr-and-dependency-installer.md" %}
+[organizr-and-dependency-installer.md](prerequisites/installing-webservers/organizr-and-dependency-installer.md)
 {% endcontent-ref %}
 
 ## Docker
@@ -120,7 +120,7 @@ http {
 
 ## Ubuntu & Debian
 
-### Navigate to Webserver Directory <a href="bkmrk-installing-organizr" id="bkmrk-installing-organizr"></a>
+### Navigate to Webserver Directory <a href="#bkmrk-installing-organizr" id="bkmrk-installing-organizr"></a>
 
 1. Navigate to your website path with `cd /var/www/websites/roxinsocks.com`
    1. Replace the domain path in the webserver path with the correct path
@@ -160,7 +160,7 @@ unzip v2-master.zip -d /var/www/websites/roxinsocks.com
 
 All your Organizr files are now installed at `/var/www/websites/roxinsocks.com/`
 
-### Permissions & Access <a href="bkmrk-permissions-26-access" id="bkmrk-permissions-26-access"></a>
+### Permissions & Access <a href="#bkmrk-permissions-26-access" id="bkmrk-permissions-26-access"></a>
 
 1. Set the permission to your path, so that Organizr can write to it by running `chown -R www-data:www-data /var/www/websites/roxinsocks.com/`
 2. For external access and functionality, edit your nginx sites-enabled config file for your domain (`nano /etc/nginx/sites-enabled/roxinsocks.com`), and be sure the `root` is set correctly in the server block. This will tell nginx where to look for organizr, when you navigate to your domain:

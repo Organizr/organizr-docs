@@ -7,9 +7,7 @@
 
 * [Prerequisites](installation/prerequisites/README.md)
   * [Installing Webservers](installation/prerequisites/installing-webservers/README.md)
-    * [Organizr & Dependency Installer](installation/prerequisites/installing-webservers/organizr-and-dependency-installer/README.md)
-      * [Windows](installation/prerequisites/installing-webservers/organizr-and-dependency-installer/windows.md)
-      * [Ubuntu & Debian](installation/prerequisites/installing-webservers/organizr-and-dependency-installer/ubuntu-debian.md)
+    * [Organizr & Dependency Installer](installation/prerequisites/installing-webservers/organizr-and-dependency-installer.md)
     * [Nginx](installation/prerequisites/installing-webservers/nginx.md)
     * [Apache](installation/prerequisites/installing-webservers/apache.md)
     * [Caddy](installation/prerequisites/installing-webservers/caddy.md)

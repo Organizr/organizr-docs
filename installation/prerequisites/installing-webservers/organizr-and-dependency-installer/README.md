@@ -1,2 +1,0 @@
-# Organizr & Dependency Installer
-

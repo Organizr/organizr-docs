@@ -4,8 +4,8 @@
 
 The first component needed for Organizr to run is a webserver.
 
-## Windows
-
+{% tabs %}
+{% tab title="Windows" %}
 ### Download and Install
 
 1. Download Nginx from: [http://nginx.org/en/download.html](https://nginx.org/en/download.html)
@@ -35,9 +35,9 @@ The first component needed for Organizr to run is a webserver.
    5. Right click on the nginx service and restart
 7. Making your Nginx install PHP ready, uncomment the following code from your nginx.conf file `c:\nginx\conf\nginx.conf`
 
-![](../../../.gitbook/assets/image%20%2857%29.png)
+![](<../../../.gitbook/assets/image (57).png>)
 
-```text
+```
 location ~ \.php$ {
     fastcgi_pass   127.0.0.1:9000;
     fastcgi_index  index.php;
@@ -54,7 +54,7 @@ To verify, open a browser and type localhost and press enter. If you get "Welcom
 
 You can copy the following if you wish and replace the content in your `nginx.conf` file
 
-```text
+```
 #user  nobody;
 worker_processes  1;
 
@@ -90,11 +90,13 @@ http {
 }
 ```
 
-## Ubuntu & Debian
+##
+{% endtab %}
 
+{% tab title="Ubuntu/Debian" %}
 ### Download and Install
 
 Run `apt-get install nginx` or [consult this guide](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04) for detailed setup.
-
-
+{% endtab %}
+{% endtabs %}
 

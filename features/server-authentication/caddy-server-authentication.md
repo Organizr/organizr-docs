@@ -1,16 +1,10 @@
----
-description: Utilizing Caddy's reauth
----
-
 # Caddy Server Authentication
 
-## Using the Organizr authorization API
+{% tabs %}
+{% tab title="Caddy V1" %}
+### Using the Organizr authorization API
 
 Using Caddy and the reauth plugin you can accomplish the same using the following block:
-
-{% hint style="info" %}
-The reauth plugin doesn't seem to be fully working with Caddy v2, use the JWT method below
-{% endhint %}
 
 ```
 reauth {
@@ -24,9 +18,9 @@ reauth {
 }
 ```
 
-## Using OAuth / JWT tokens
+### Using OAuth / JWT tokens
 
-Here is a sample Caddy directive to protect a path using the Organizr token:
+Here is a sample Caddy directive using caddy-jwt to protect a path using the Organizr token:
 
 ```
 jwt {
@@ -51,33 +45,105 @@ jwt {
 &#x20;The secret to use to validate the token needs to be passed to Caddy either as an environment variable named `JWT_SECRET` or in a file, specified with the `secret` configuration option.
 
 {% hint style="info" %}
-&#x20;Note that the http.jwt plugin is not installed in default Caddy builds. See [https://caddyserver.com/docs/http.jwt](https://caddyserver.com/docs/http.jwt) for instructions on how to install it.
+&#x20;Note that the http.jwt plugin is not installed in default Caddy builds.
 {% endhint %}
-
-&#x20;See [https://github.com/BTBurke/caddy-jwt](https://github.com/BTBurke/caddy-jwt) for more information on the jwt plugin and its configuration options.
 
 {% hint style="info" %}
-&#x20;You should not protect the `/` Organizr root path. Organizr handles it on its own.
+&#x20;You should not protect the `/` Organizr root path. Organizr handles it on its ow
 {% endhint %}
 
-### Caddy v2
+{% embed url="https://github.com/BTBurke/caddy-jwt" %}
+caddy-jwt Github
+{% endembed %}
+{% endtab %}
 
-For Caddy v2, the caddy-security plugin seems to be the successor to caddy-jwt. The syntax has changed slightly to be something like this:
+{% tab title="Caddy V2" %}
+### Using JWT tokens
+
+For Caddy v2, caddy-security authorize offers all the required functionality for server authentication
+
+{% hint style="info" %}
+Note that caddy-security plugin is not installed in default Caddy builds
+{% endhint %}
+
+{% embed url="https://github.com/greenpau/caddy-security" %}
+caddy-security Github
+{% endembed %}
+
+{% embed url="https://authp.github.io/docs/authorize/intro" %}
+Caddy Security Authorize Docs
+{% endembed %}
+
+An example Caddy V2 Caddyfile using caddy-security for authentication
 
 ```
-route /tautulli* {
-    authorize {
-        primary yes
-        set auth url https://mydomain.com
-        allow roles User Admin
+security { 
+    authorization policy admin {
+        
+        set auth url https://mydomain.com/auth
         crypto key token name organizr_token_uuid
         crypto key verify organizrHash
+        set token sources cookie
+        validate bearer header
+
+        # Log any admin
+        acl rule {
+            match iss Organizr
+            match role Admin
+            allow stop log info
+        }
+
+        # Log any denied 
+        acl rule {
+            match iss any
+            deny log warn
+        }
     }
-    reverse_proxy localhost:8181
+
+    authorization policy user {
+        
+        set auth url https://mydomain.com/auth
+        crypto key token name organizr_token_uuid
+        crypto key verify organizrHash
+        set token sources cookie
+        validate bearer header
+
+        # Log any admin/user
+        acl rule {
+            match iss Organizr
+            match role Admin User
+            allow stop log info
+        }
+
+        # Log any denied 
+        acl rule {
+            match iss any
+            deny log warn
+        }
+    }
 }
 
-route /sonarr* {
-    authorize
-    reverse_proxy localhost:8989
+mydomain.com {
+    root * C:\Caddy\www\organizr\html
+    php_fastcgi localhost:9000
+    rewrite /api/v2/* /api/v2/index.php?{query}
+    file_server
+
+    # Subdirectory authentication
+    route /calibre/* {
+        uri strip_prefix /calibre
+        authorize with user
+        reverse_proxy localhost:9900
+    }
+}
+
+# Subdomain authentication
+tautulli.mydomain.com {
+    route {
+        authorize with admin
+        reverse_proxy localhost:8181
+    } 
 }
 ```
+{% endtab %}
+{% endtabs %}
