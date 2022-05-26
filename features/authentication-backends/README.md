@@ -26,5 +26,4 @@ Settings / System Settings / Main
 
 To get to the other backends head to the above path and change the `Authentication Type` option to `Organizr DB + Backend` and change the `Authentication Backend`option.
 
-![](../../.gitbook/assets/image%20%2837%29.png)
-
+![](<../../.gitbook/assets/image (48).png>)

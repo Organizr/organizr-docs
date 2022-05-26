@@ -14,7 +14,7 @@ Settings / System Settings / Backup
 
 All that you need to do is click the `Create Backup Button`
 
-![](../.gitbook/assets/image%20%2833%29.png)
+![](<../.gitbook/assets/image (31).png>)
 
 Once the backup process completes, the new back up will be listed at the bottom of the back up listing.  There are 2 buttons that are accessible for each backup.
 
@@ -32,5 +32,4 @@ As of Version `2.1.500` the restore process has not been written for Organizr.
 2. Unzip the backup zip file somewhere
    1. Inside the zip file you will find the folder structure of where the files need to be placed.
       1. If you placed the database-folder elsewhere, you need to update the `'dbLocation' => 'dbPath'` value in `config.php`
-3. Restart the docker \(or process if not in docker\) and refresh the web page for Organizr
-
+3. Restart the docker (or process if not in docker) and refresh the web page for Organizr

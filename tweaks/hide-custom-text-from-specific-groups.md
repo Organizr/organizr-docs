@@ -28,18 +28,18 @@ This is text everyone sees.
 
 Open the Tab Editor and go to Homepage Items then finally select Custom HTML
 
-![](<../.gitbook/assets/image (7).png>)
+![](<../.gitbook/assets/image (4).png>)
 
 Next you will Click which Custom HTML segment you want to use and `Enable`it then change the `Minimum Authentication` to the group you want to allow to see it.  Next you will copy the code from above and paste it into the box at the bottom.  Finally hit the :floppy\_disk: button.
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../.gitbook/assets/image (5).png>)
 
 ### Outcome
 
 #### A User who is logged in
 
-![](<../.gitbook/assets/image (15).png>)
+![](<../.gitbook/assets/image (6).png>)
 
 #### A User who is not logged in
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (7).png>)

@@ -1,36 +1,39 @@
 # Tab Management
 
-![](.gitbook/assets/image%20%2851%29.png)
+![](<.gitbook/assets/image (51).png>)
 
 ## Summary
 
 Organizr Tabs is the main focus of Organizr.  You can have as many tabs as you like and even put them into Categories.  Each tab can be configured to be opened in an iframe or in a new window.  In your Settings in Tab Editor, it will list all your current tabs. From this screen you can add, delete, disable, etc
 
 {% hint style="warning" %}
-Organizr **does not** do any type of proxying. The URL you are putting in the Tab URL **must** be accessible from your browser. This means if you want external access to the items you are putting in Organizr, they too must be externally accessible via a reverse proxy \(recommended\) or opened port.
+Organizr **does not** do any type of proxying. The URL you are putting in the Tab URL **must** be accessible from your browser. This means if you want external access to the items you are putting in Organizr, they too must be externally accessible via a reverse proxy (recommended) or opened port.
 {% endhint %}
 
 ## Tab Editor Settings
 
-**Rearranging Tabs:** Hover over the three dots on the left side of the tabs, click and drag to where you want it. 
+**Rearranging Tabs:** Hover over the three dots on the left side of the tabs, click and drag to where you want it.&#x20;
 
-**Home Symbol \(See image below\):** This will take you to the Homepage setting based on a best guess of your tab name.
+**Home Symbol (See image below):** This will take you to the Homepage setting based on a best guess of your tab name.
 
-![](.gitbook/assets/image%20%2860%29.png)
+![](<.gitbook/assets/image (64).png>)
 
 {% hint style="info" %}
 Homepage Items and Tabs are two separate things and one does not configure the other
 {% endhint %}
 
-**Category:** Group tabs together so you can collapse them \(set up your categories in the Categories tab below Tab Editor\) 
+**Category:** Group tabs together so you can collapse them (set up your categories in the Categories tab below Tab Editor)&#x20;
 
 **Group:** Minimum Group that the tab should be shown to. Usually should match ServerAuth if you are using it.
 
-{% page-ref page="features/server-authentication/" %}
+{% content-ref url="features/server-authentication/" %}
+[server-authentication](features/server-authentication/)
+{% endcontent-ref %}
 
 **Type:**
 
-* * Internal - only for Organizr things \(Homepage and Settings\)
+*
+  * Internal - only for Organizr things (Homepage and Settings)
   * iFrame - your standard tab
   * New Window - Opens a new window/tab
 
@@ -44,7 +47,7 @@ If you set the default tab to something that a user doesn't have access to, it w
 
 **Splash:** Adds a link to the splash screen that shows when you log in/time out.
 
-**Ping:** Enables the ping functionality \(must have Ping URL filled in\)
+**Ping:** Enables the ping functionality (must have Ping URL filled in)
 
 **Preload:** Loads the tab when you first load/login to Organizr
 
@@ -54,7 +57,7 @@ If you set the default tab to something that a user doesn't have access to, it w
 
 **Tab URL:** URL you want to load. Examples: `/appname`, `https://app.domain.com` Note: must have scheme if you are using a full URL.
 
-**Tab Local URL:** URL you want to load when you are local to Organizr \(RFC1918 space by default: 192.168.x.x, 10.x.x.x, or 172.16-31.x.x, You can add more address space in System Settings -&gt; Main -&gt; Login\) This is optional and can be left blank.
+**Tab Local URL:** URL you want to load when you are local to Organizr (RFC1918 space by default: 192.168.x.x, 10.x.x.x, or 172.16-31.x.x, You can add more address space in System Settings -> Main -> Login) This is optional and can be left blank.
 
 {% hint style="danger" %}
 If you are using HTTPS and have this filled in, you will a Mixed Content Error when you are local unless you are also switching to an HTTP page for Organizr when local
@@ -64,7 +67,7 @@ If you are using HTTPS and have this filled in, you will a Mixed Content Error w
 
 **Tab Auto Action:** Auto Close/Reload after a specified amount of minutes. Note: this is timed of when the tab is opened, not when last interacted with.
 
-**Tab Image:** Will fill in if you choose from the Image/Icon drop downs 
+**Tab Image:** Will fill in if you choose from the Image/Icon drop downs&#x20;
 
 **Test Tab:** Will test to see if the tab can be loaded in an iFrame or not.
 
@@ -72,7 +75,6 @@ If you are using HTTPS and have this filled in, you will a Mixed Content Error w
 
 **Tab URL:** `api/v2/page/homepage`
 
-**Original Icon:** `fontawesome::home` 
+**Original Icon:** `fontawesome::home`&#x20;
 
-**Type \(after saving\):** Organizr
-
+**Type (after saving):** Organizr

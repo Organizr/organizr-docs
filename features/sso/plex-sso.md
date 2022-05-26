@@ -12,15 +12,15 @@ If you are using Plex as the main driving factor for your Organizr instance, you
 Settings / System Settings / Main / Authentication
 {% endhint %}
 
-![](../../.gitbook/assets/image%20%2832%29.png)
+![](<../../.gitbook/assets/image (32).png>)
 
- Change the Authentication type to `Organizr DB + Backend`. Choose `Plex` as the Authentication Backend. Use the Retrieve button to fill in the Plex Token and Plex Machine.
+&#x20;Change the Authentication type to `Organizr DB + Backend`. Choose `Plex` as the Authentication Backend. Use the Retrieve button to fill in the Plex Token and Plex Machine.
 
 The other two toggles are optional:
 
-| **Type** | **Purpose** |
-| :--- | :--- |
-| Enable Plex oAuth | This will bring up a Plex login screen that will flow credentials through plex.tv |
+| **Type**            | **Purpose**                                                                                                                            |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Enable Plex oAuth   | This will bring up a Plex login screen that will flow credentials through plex.tv                                                      |
 | Strict Plex Friends | Enabling this option will only allow people from your friends list that have access to the server that you selected for `Plex Machine` |
 
 Now that Plex is setup to be the backend for Organizr, you can head over to the SSO section for Plex
@@ -33,16 +33,16 @@ Settings / System Settings / Single Sign-On / Plex
 If Plex account was made using Facebook/Google - YOU HAVE TO USE OAUTH to sign in
 {% endhint %}
 
- Plex SSO will only work with Plex reverse proxied as a subdirectory and not as a subdomain. Fill out the `Plex Token` and `Plex Machine` \(They should already be filled in if you did the above step\). You can use the retrieve buttons to fill these out. Toggle the enabled switch to turn it on.
+&#x20;Plex SSO will only work with Plex reverse proxied as a subdirectory and not as a subdomain. Fill out the `Plex Token` and `Plex Machine` (They should already be filled in if you did the above step). You can use the retrieve buttons to fill these out. Toggle the enabled switch to turn it on.
 
-![](../../.gitbook/assets/image%20%2831%29.png)
+![](<../../.gitbook/assets/image (33).png>)
 
-| **Type** | **Purpose** |
-| :--- | :--- |
-| Plex Token | Token to authenticate with Plex Servers |
-| Plex Machine | Plex Machine ID for your specific server |
+| **Type**       | **Purpose**                                           |
+| -------------- | ----------------------------------------------------- |
+| Plex Token     | Token to authenticate with Plex Servers               |
+| Plex Machine   | Plex Machine ID for your specific server              |
 | Admin Username | Username or Email for Organizr and Plex Admin account |
-| Enable | Enable Plex SSO |
+| Enable         | Enable Plex SSO                                       |
 
 {% hint style="warning" %}
 If not using Plex OAuth - For Admin Account - Make sure passwords match in Organizr and Plex
@@ -52,9 +52,9 @@ If not using Plex OAuth - For Admin Account - Make sure passwords match in Organ
 Plex SSO doesn't work if Plex Reverse Proxy is a subdomain - It must be on the same domain as Organizr
 {% endhint %}
 
-### Plex Reverse Proxy \(Sub-Directory\)
+### Plex Reverse Proxy (Sub-Directory)
 
-```text
+```
 location /plex/ {
   proxy_pass http://ip-of-plex:32400/;
   include /path/to/proxy.conf;
@@ -66,7 +66,7 @@ if ($http_referer ~ /plex/) {
 
 #### Contents of Proxy.conf
 
-```text
+```
 client_max_body_size 10m;
 client_body_buffer_size 128k;
 proxy_bind $server_addr;
@@ -91,4 +91,3 @@ proxy_no_cache $cookie_session;
 proxy_set_header Upgrade $http_upgrade;
 proxy_set_header Connection "upgrade";
 ```
-

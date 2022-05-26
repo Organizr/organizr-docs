@@ -14,7 +14,7 @@ We will use windows as an example.
 
 The Hosts file in Windows is located at the following location:
 
-```text
+```
 C:\Windows\System32\drivers\etc
 ```
 
@@ -34,15 +34,15 @@ In this case, type Notepad in Start search and right-click on the Notepad result
 
 The changes you need to make are like below:
 
-```text
+```
 127.0.0.1       hostname
 ```
 
-The left value is the IP address and the right value is the hostname or text you want to tie to that IP address. For this fix everything needs to be on the same domain \(basically like how subdomains work when reverse proxying\).
+The left value is the IP address and the right value is the hostname or text you want to tie to that IP address. For this fix everything needs to be on the same domain (basically like how subdomains work when reverse proxying).
 
 Note: They must be on the same subdomain for this to work. You can't just do:
 
- `<service>.tld`, they have to be `<service>.something.tld`
+&#x20;`<service>.tld`, they have to be `<service>.something.tld`
 
 **Router/DNS**
 
@@ -68,11 +68,11 @@ Note: This was only supposed to be a temporary setting and it seems like Chrome 
 
 ## **Edge**
 
-Access this page from your browser [`edge://flags/`](edge://flags/) 
+Access this page from your browser [`edge://flags/`](edge://flags/)&#x20;
 
 Search for SameSite and disable it.
 
-![Edge settings](../../.gitbook/assets/image%20%2814%29.png)
+![Edge settings](<../../.gitbook/assets/image (1).png>)
 
 ## **FireFox**
 
@@ -80,7 +80,7 @@ Access this page from your browser [`about:config`](edge://flags/)
 
 Search for SameSite and disable it.
 
-![Firefox settings](../../.gitbook/assets/image%20%284%29.png)
+![Firefox settings](<../../.gitbook/assets/image (2).png>)
 
 ### **Application Errors**
 
@@ -88,9 +88,8 @@ Jackett and Tautulli seem to hardcode the SameSite cookie as Lax
 
 Sonarr/Radarr/Lidarr are starting to hardcode the SameSite cookie as Strict
 
-The only way to bypass that is to use Option \#1 or Option \#2
+The only way to bypass that is to use Option #1 or Option #2
 
- [Read more about SameSite](https://web.dev/samesite-cookies-explained/)
+&#x20;[Read more about SameSite](https://web.dev/samesite-cookies-explained/)
 {% endtab %}
 {% endtabs %}
-

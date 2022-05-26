@@ -6,7 +6,7 @@ description: Homepage Item Information
 
 {% tabs %}
 {% tab title="About" %}
-![](<../../.gitbook/assets/image (74).png>)
+![](<../../.gitbook/assets/image (84).png>)
 
 Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.
 {% endtab %}
@@ -40,7 +40,7 @@ When setting up the homepage item, the first option is to enable it, do that by 
 &#x20;Please make sure not to set the `Minimum Authentication` to at least the same or lower than the homepage's `Tab Group`
 {% endhint %}
 
-![](<../../.gitbook/assets/image (79).png>)
+![](<../../.gitbook/assets/image (74).png>)
 
 | **Field**                          | **Value**                                 |
 | ---------------------------------- | ----------------------------------------- |
@@ -51,7 +51,7 @@ When setting up the homepage item, the first option is to enable it, do that by 
 
 Enter the connection details of your Sonarr server.  This homepage item allows multiple Sonarr server connections.
 
-![](<../../.gitbook/assets/image (76).png>)
+![](<../../.gitbook/assets/image (75).png>)
 
 | **Field**                 | **Value**                                                                   |
 | ------------------------- | --------------------------------------------------------------------------- |
@@ -68,7 +68,7 @@ Organizr's API Socks allows you to access Sonarr's API without needing to Revers
 
 {% tabs %}
 {% tab title="Settings" %}
-![](<../../.gitbook/assets/image (80).png>)
+![](<../../.gitbook/assets/image (76).png>)
 
 | **Field**                     | **Value**                                             |
 | ----------------------------- | ----------------------------------------------------- |
@@ -78,7 +78,7 @@ Organizr's API Socks allows you to access Sonarr's API without needing to Revers
 {% endtab %}
 
 {% tab title="Preview" %}
-![](<../../.gitbook/assets/image (77).png>)
+![](<../../.gitbook/assets/image (78).png>)
 {% endtab %}
 {% endtabs %}
 
@@ -132,7 +132,7 @@ Enabling this module will output Sonarr's Download Queue on the homepage.
 
 {% tabs %}
 {% tab title="Settings" %}
-![](<../../.gitbook/assets/image (83).png>)
+![](<../../.gitbook/assets/image (77).png>)
 
 | **Field**                     | **Value**                                            |
 | ----------------------------- | ---------------------------------------------------- |
@@ -145,7 +145,7 @@ Enabling this module will output Sonarr's Download Queue on the homepage.
 {% tab title="Homepage Preview" %}
 Better preview coming soon...
 
-![](<../../.gitbook/assets/image (75).png>)
+![](<../../.gitbook/assets/image (79).png>)
 {% endtab %}
 {% endtabs %}
 
@@ -155,7 +155,7 @@ This module adds past and future TV Shows on the homepage Calendar
 
 {% tabs %}
 {% tab title="Settings" %}
-![](<../../.gitbook/assets/image (84).png>)
+![](<../../.gitbook/assets/image (80).png>)
 
 | **Field**        | **Value**                                      |
 | ---------------- | ---------------------------------------------- |
@@ -171,7 +171,7 @@ This module adds past and future TV Shows on the homepage Calendar
 {% endtab %}
 
 {% tab title="Homepage Preview" %}
-![](<../../.gitbook/assets/image (78).png>)
+![](<../../.gitbook/assets/image (83).png>)
 {% endtab %}
 {% endtabs %}
 
@@ -181,4 +181,4 @@ This module adds past and future TV Shows on the homepage Calendar
 &#x20;Make sure to save before hitting the `Test Connection` button
 {% endhint %}
 
-![](<../../.gitbook/assets/image (82).png>)
+![](<../../.gitbook/assets/image (81).png>)

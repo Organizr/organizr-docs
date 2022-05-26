@@ -8,7 +8,7 @@ The second component needed for Organizr to run is PHP.
 
 ### Download and Install
 
-1. Download PHP for Windows from here: [http://windows.php.net/download](https://windows.php.net/download) \(Non Thread Safe version used in this guide\)
+1. Download PHP for Windows from here: [http://windows.php.net/download](https://windows.php.net/download) (Non Thread Safe version used in this guide)
 2. Create a folder called PHP under your Nginx directory e.g. `C:\nginx\php` and copy the downloaded files to this folder
 
 ### Running PHP as a service
@@ -24,8 +24,8 @@ The second component needed for Organizr to run is PHP.
    4. See image below for Example
 4. Install Service
 5. On the opened cmd prompt type in `nssm start php` to start the PHP service.
-6. If the installed PHP service doesn’t start, then try manually running the `php-cgi.exe` file in `C:\nginx\php\` 
-   1.  If you get a missing ‘VCRUNTIME’ related error then follow the solution on this link: [http://stackoverflow.com/questions/30811668/php-7-missing-vcruntime140-dll](https://stackoverflow.com/questions/30811668/php-7-missing-vcruntime140-dll)
+6. If the installed PHP service doesn’t start, then try manually running the `php-cgi.exe` file in `C:\nginx\php\`&#x20;
+   1. &#x20;If you get a missing ‘VCRUNTIME’ related error then follow the solution on this link: [http://stackoverflow.com/questions/30811668/php-7-missing-vcruntime140-dll](https://stackoverflow.com/questions/30811668/php-7-missing-vcruntime140-dll)
 7. Make a copy of one of the `php.ini-development` or `php.ini-production` files and rename it to `php.ini`
 8. Open the php.ini file and search for the following and uncomment each:
    1. extension\_dir = "ext"
@@ -44,7 +44,7 @@ The second component needed for Organizr to run is PHP.
        1. So that is becomes: `sqlite3.extension_dir = ext`
 11. On the opened `cmd`prompt type in `nssm restart php` to restart the PHP service to apply the changes in `php.ini`.
 
-![](../../.gitbook/assets/image%20%2854%29.png)
+![](<../../.gitbook/assets/image (60).png>)
 
 ## Ubuntu & Debian
 
@@ -52,7 +52,7 @@ The second component needed for Organizr to run is PHP.
 
 #### Add the repository
 
-```text
+```
 apt-get install software-properties-common
 add-apt-repository ppa:ondrej/php
 apt-get update
@@ -60,13 +60,12 @@ apt-get update
 
 #### Install
 
-```text
+```
 apt-get install php7.1-fpm
 ```
 
 Then, to be sure all of the PHP packages are installed, run the following command with your package manager. Some of these may also require other dependencies, so select "Yes" to install those as well.
 
-```text
+```
 apt-get install php7.1-mysql php7.1-sqlite3 sqlite3 php7.1-xml php7.1-zip openssl php7.1-curl
 ```
-
