@@ -12,7 +12,7 @@ Starting with Organizr Version 2.1.165 you can now use the API to enable PHP Mai
 
 With Organizr Version 2.1.165 and newer, there was a new API Endpoint added.  With this endpoint, you may now use Organizr's SMTP servers to reset your password if you have not setup PHPMailer yet.
 
-In order to enable PHP Mailer you will need to know your Organizr API Key.  This is inside your `/api/config/config.php` file under the variable:
+In order to enable PHP Mailer you will need to know your Organizr API Key.  This is inside your `/data/config/config.php` file under the variable:
 
 ```
 'organizrAPI' => 'qefeh7de0poey7c87w0a',
@@ -104,7 +104,7 @@ For example, if you're appending the code to the end of your config file, it wou
 
 You will need the hashed value of the password, so, to get hashed value for `PHPMAILER-smtpHostPassword`
 
-Before you do that, you will need your Organizr hash key.  This is inside your `/api/config/config.php` file under the variable:
+Before you do that, you will need your Organizr hash key.  This is inside your `/data/config/config.php` file under the variable:
 
 ```
 'organizrHash' => 'xxxxxxxxxx',
