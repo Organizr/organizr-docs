@@ -6,14 +6,30 @@ description: Utilizing Nginx's server_auth
 
 After reading about how Server Authentication works, next we will need to set up the rewriting directive.
 
-## Using the Organizr authorization API
+## Configure the Nginx location block
 
-### Native Nginx
+You will need to modify your location block. Associated with your site. In Linux, this is typically located at `/etc/nginx/sites-available/domain.com.conf`
+
+### Native Nginx Rewrite
 
 ```
 location ~ /organizr-auth/(.*) {
 	internal;
 	rewrite ^/organizr-auth/(.*) /api/v2/auth/$1;
+}
+```
+
+{% hint style="danger" %}
+The Native Nginx rewrite block has been reported as not working for all setups. Use the Native Nginx Proxy Pass method if it fails.
+{% endhint %}
+
+### Native Nginx Proxy Pass
+
+```
+location ~ /organizr-auth/(.*) {
+        internal;
+        proxy_pass https://127.0.0.1/api/v2/auth/$1;
+        proxy_set_header Content-Length "";
 }
 ```
 
@@ -44,13 +60,13 @@ auth_request /organizr-auth/0;
 Note: If you are using a reverse proxy, this should be added on the reverse proxy layer
 {% endhint %}
 
-### **Subdomains**
+## **Subdomains**
 
-For subdomains, you need to call back to the domain organizr is on, this can be done differently depending on your installation method.
+A subdomain allows you to have a custom application name for each app on your domain. For example, https://sonarr.domain.com for Sonarr and https://radarr.domain.com for Radar. For subdomains, you need to call back to the domain organizr is on, this can be done differently depending on your installation method.
 
-Native, with local DNS setup (This can also apply for containers): `http://web.home.lab/api/v2/auth/$1`
+Native, with local DNS setup (This can also apply for containers): `http://app.domain.com/api/v2/auth/$1`
 
-Docker, using ip and port (This is assuming the container is running in bridge): `http://192.168.9.5:8080/api/v2/auth/$1`
+Docker, using ip and port (This is assuming the container is running in bridge): `http://[docker/hostIP]:[port]/api/v2/auth/$1`
 
 ```
 location ~ ^/organizr-auth/(.*) {
@@ -62,16 +78,20 @@ location ~ ^/organizr-auth/(.*) {
 }
 ```
 
-### **How to include the authorization block in a reverse proxy**
+## **Reverse Proxy (subdirectory)**
 
-All you need to do is include one line per reverse proxy block as the very first line: `auth_request /organizr-auth/0;` Where **/organizr-auth/0** is the access level for admin.&#x20;
+All you need to do is include one line per reverse proxy block as **the very first line**:
+
+&#x20;`auth_request /organizr-auth/0;`&#x20;
+
+If you are using something other than the default 0, change it out here. Other options are located on the [Server Authentication](./) page.
 
 Here is a sample of a reverse proxy with admin access:
 
 ```
 location /[SERVICE] {
     auth_request /organizr-auth/0;
-    proxy_pass http://[IP]:[PORT];
+    proxy_pass http://[IP]:[PORT]/[SERVICE];
     add_header X-Frame-Options "SAMEORIGIN";
     proxy_set_header Host $host;
     proxy_set_header X-Real-IP $remote_addr;
@@ -85,8 +105,8 @@ Most of our [examples](https://github.com/organizrTools/Config-Collections-for-N
 
 ```
 location /sonarr {
-    proxy_pass http://127.0.0.1:8989/sonarr;
     auth_request /organizr-auth/0;
+    proxy_pass http://127.0.0.1:8989/sonarr;
     location /sonarr/api { # We know that sonarr's api-endpoint is /api, so we are gonna open that up.
         auth_request off; # The line that actually opens it up
         proxy_pass http://127.0.0.1:8989/sonarr/api; # We need to tell nginx where to send the request
@@ -94,7 +114,9 @@ location /sonarr {
 }
 ```
 
-### NPM
+## NPM
+
+[Nginx Proxy Manager](https://nginxproxymanager.com/) is a web application that helps you manage your Nginx configuration.
 
 Please read the red bubbles in the screenshots carefully. Modify your Organizr proxy host configuration to include a custom location. Example where **`ip-address`** is local IP and **`8000`** is the port where Organizr is hosted:
 
