@@ -20,7 +20,7 @@ The second component needed for Organizr to run is PHP.
 3. Type in the following `cmd nssm install php`
    1. Path = `C:\nginx\php\php-cgi.exe`
    2. Startup directory = `C:\nginx\php`
-   3. Arguments = `-b 127.0.0.1:900`
+   3. Arguments = `-b 127.0.0.1:9000`
    4. See image below for Example
 4. Install Service
 5. On the opened cmd prompt type in `nssm start php` to start the PHP service.
