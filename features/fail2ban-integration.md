@@ -26,6 +26,7 @@ Edit the `jail.local` file in the Fail2Ban directory and add the following:&#x20
 [organizr-auth]
 enabled = true
 port = http,https
+logtimezone = UTC
 filter = organizr-auth
 logpath = /var/www/html/db/logs/organizr*.log
 ignoreip = 192.168.1.0/24
