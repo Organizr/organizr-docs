@@ -60,6 +60,8 @@
 
 ## 🆘 Help
 
+* [Custom Work](help/custom-work/README.md)
+  * [Custom Pages](help/custom-work/custom-pages.md)
 * [Tutorials](help/tutorials/README.md)
   * [Reverse Proxies](help/tutorials/reverse-proxies.md)
 * [FAQ](help/faq/README.md)

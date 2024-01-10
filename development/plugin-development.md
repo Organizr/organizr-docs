@@ -12,15 +12,7 @@ This only pertains to Organizr instances on version 2.1.1140 or higher
 
 Each plugin consists of the following files:
 
-| File Name               | Description                                                                                                                                   |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| plugin.php              | The file is the PHP Class file that will have all your plugins functions and everything                                                       |
-| api.php                 | This file will contain all the API routes for your plugin                                                                                     |
-| config.php              | This file will contain all of your plugins default config values                                                                              |
-| page.php \[OPTIONAL]    | This file can hold some html that Organizr can display if you set a Tab in Organizr as _<mark style="color:purple;">**Organizr**</mark>_ type |
-| main.js                 | This Javascript file will be included when Organizr loads if your plugin is enabled                                                           |
-| settings.js \[OPTIONAL] | This Javascript file will be included when Organizr loads the settings page if your plugin is enabled                                         |
-| logo.png                | The logo file for your plugin                                                                                                                 |
+<table><thead><tr><th width="300">File Name</th><th>Description</th></tr></thead><tbody><tr><td>plugin.php</td><td>The file is the PHP Class file that will have all your plugins functions and everything</td></tr><tr><td>api.php</td><td>This file will contain all the API routes for your plugin</td></tr><tr><td>config.php</td><td>This file will contain all of your plugins default config values</td></tr><tr><td>page.php [OPTIONAL]</td><td>This file can hold some html that Organizr can display if you set a Tab in Organizr as <em><mark style="color:purple;"><strong>Organizr</strong></mark></em> type</td></tr><tr><td>main.js</td><td>This Javascript file will be included when Organizr loads if your plugin is enabled</td></tr><tr><td>settings.js [OPTIONAL]</td><td>This Javascript file will be included when Organizr loads the settings page if your plugin is enabled</td></tr><tr><td>logo.png</td><td>The logo file for your plugin</td></tr></tbody></table>
 
 ## File Development
 

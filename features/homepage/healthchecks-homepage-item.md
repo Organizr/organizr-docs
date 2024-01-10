@@ -56,11 +56,19 @@ Head over to [https://healthchecks.io](https://healthchecks.io/) and create an a
 
 Enable the API and once enabled click on Show API Keys
 
-![](<../../.gitbook/assets/image (62).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (62).png" alt="">
+
+</div>
 
 Copy the API key (Top one) and paste into Organizr
 
-![](<../../.gitbook/assets/image (61).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (61).png" alt="">
+
+</div>
 
 ### **Tips**
 
